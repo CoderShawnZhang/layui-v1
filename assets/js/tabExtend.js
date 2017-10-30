@@ -14,9 +14,7 @@ layui.define(['element','jquery'],function(exports){
         };
     var tabIdIndex = 0;
     Tab.prototype.tabAdd = function(_this){
-
         var that = this;
-
         var tabFilter = that.tabConfig.tabFilter;
         tabIdIndex++;
         //新增一个Tab项

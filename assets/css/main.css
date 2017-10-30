@@ -1,0 +1,21 @@
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    min-width: 320px;
+    position: absolute;
+}
+.iframe-body-top{
+    top:60px;
+}
+.iframe-content-top{
+    margin: 0;
+}
+/*导航左侧关闭页签操作按钮*/
+.closeBox{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    margin-top: -10px;
+}
