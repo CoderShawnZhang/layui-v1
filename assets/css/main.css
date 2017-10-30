@@ -22,12 +22,9 @@ iframe{
     position: absolute;
     right: 0;
     height: 40px;
-    /* line-height: 40px; */
     background: white;
     padding: 0;
-    /* color: black; */
     z-index: 1;
-    /*border-left: 1px solid #e2e2e2;*/
     border-bottom: 5px solid #009688;
 }
 .op-closeBox .layui-nav-item{  line-height: 40px;  }
@@ -39,12 +36,18 @@ iframe{
     position: absolute;
     right: 115px;
     border-left: 1px solid #e2e2e2;
-    /* border-right: 1px solid gray; */
     height: 40px;
     text-align: center;
     line-height: 40px;
-    /* border-bottom: 5px solid red; */
     width: 70px;
     background: #5EB95E;
     cursor: pointer;
+}
+/*导航与图标样式*/
+/*.layui-tab-title li i{*/
+    /*margin-right: 5px;*/
+/*}*/
+.layui-tab-title li cite{
+    font-style: normal;
+    padding-left: 5px;
 }
