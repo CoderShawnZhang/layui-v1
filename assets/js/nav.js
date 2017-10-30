@@ -30,6 +30,7 @@ layui.config({
 
         $('.' + $(this).data('left')).show();
     });
+
 });
 
 function addTab(_this){

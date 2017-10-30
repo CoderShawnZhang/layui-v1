@@ -19,3 +19,5 @@ iframe{
     top: -10px;
     margin-top: -10px;
 }
+.layui-side-scroll ul{display: none;}
+.layui-side-scroll ul:first-child{display: block}
