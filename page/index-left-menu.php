@@ -6,7 +6,7 @@
             <dd><a href="javascript:;">列表一</a></dd>
             <dd><a href="javascript:;">列表二</a></dd>
             <dd><a href="javascript:;">列表三</a></dd>
-            <dd><a href="">超链接</a></dd>
+            <dd><a href="javascript:;">超链接</a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">

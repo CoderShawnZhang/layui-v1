@@ -8,9 +8,7 @@
     <title>layout 后台大布局 - Layui</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_tnyc012u2rlwstt9.css" media="all" />
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
