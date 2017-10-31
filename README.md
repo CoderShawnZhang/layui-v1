@@ -1,4 +1,4 @@
-Yii 2 Advanced Project Template
+Layui 加入后台框架 Yii2.0
 ===============================
 
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
