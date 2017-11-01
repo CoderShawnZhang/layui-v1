@@ -3,7 +3,7 @@
  */
 var tab;
 layui.config({
-   base : "/assets/js/"
+   base : "assets/js/"
 }).use(['tabExtend','form','element','layer','jquery'],function () {
 
     var form = layui.form,

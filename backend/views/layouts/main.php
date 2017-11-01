@@ -10,7 +10,14 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
 
-AppAsset::register($this);
+$AppAsset = AppAsset::register($this);
+$assetPath = $AppAsset->baseUrl;
+//var_dump($AppAsset->baseUrl);die;
+?>
+<?php
+
+echo "<script>var str='$assetPath';</script>";
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -20,7 +27,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
+    <title>111<?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
 <body>

@@ -1,12 +1,12 @@
 <!--css控制默认第一个为初始显示导航-->
 <ul class="layui-nav layui-nav-tree left-menu0"  lay-filter="test">
-    <li class="layui-nav-item layui-nav-itemed">
-        <a class="" href="javascript:;"><i class="iconfont icon-computer"></i><cite>所有商品</cite></a>
+    <li class="layui-nav-item">
+        <a class="" href="javascript:;"><i class="iconfont icon-computer"></i><cite>制作导航</cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;">列表一</a></dd>
-            <dd><a href="javascript:;">列表二</a></dd>
-            <dd><a href="javascript:;">列表三</a></dd>
-            <dd><a href="javascript:;">超链接</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/index" data-id="1">侧栏导航</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/goods" data-id="2">顶部导航</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/table" data-id="3">右上导航</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/form" data-id="4">右侧导航</a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">
@@ -17,8 +17,8 @@
             <dd><a href="">超链接</a></dd>
         </dl>
     </li>
-    <li class="layui-nav-item"><a href="javascript:;"><i class="iconfont icon-computer"></i><cite>云市场</cite></a></li>
-    <li class="layui-nav-item"><a href="javascript:;"><i class="iconfont icon-computer"></i><cite>发布商品</cite></a></li>
+    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="5"><i class="iconfont icon-computer"></i><cite>云市场</cite></a></li>
+    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/goods" data-id="6"><i class="iconfont icon-computer"></i><cite>发布商品</cite></a></li>
 </ul>
 <ul class="layui-nav layui-nav-tree left-menu5" lay-filter="test">
     <li class="layui-nav-item">

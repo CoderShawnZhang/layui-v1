@@ -51,3 +51,7 @@ iframe{
     font-style: normal;
     padding-left: 5px;
 }
+
+.layui-nav-tree li i{
+    margin-right: 5px;
+}

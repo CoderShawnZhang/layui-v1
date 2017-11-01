@@ -12,15 +12,17 @@ layui.define(['element','jquery'],function(exports){
                 url : undefined
             }
         };
+
     var tabIdIndex = 0;
     Tab.prototype.tabAdd = function(_this){
         var that = this;
         var tabFilter = that.tabConfig.tabFilter;
         tabIdIndex++;
         //新增一个Tab项
+
         element.tabAdd(tabFilter, {
             title: _this.text() //用于演示
-            ,content: "<iframe src='/page/page"+tabIdIndex+".php' data-id='1'></frame>"
+            ,content: "<iframe src='"+_this.data('url')+"' data-id='"+tabIdIndex+"'></frame>"
             ,id: new Date().getTime() //实际使用一般是规定好的id，这里以时间戳模拟下
         })
     }

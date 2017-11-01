@@ -13,6 +13,12 @@ use yii\base\Controller;
 class IndexController extends Controller
 {
     public function actionIndex(){
+
         return $this->render('index');
+    }
+
+    public function actionDesktop(){
+        $this->layout = false;//不载入模版
+        return $this->render('desktop');
     }
 }
