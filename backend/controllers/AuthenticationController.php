@@ -16,6 +16,10 @@ class AuthenticationController extends BaseController
         return $this->render('index');
     }
 
+    /**
+     * 认证
+     * @return string
+     */
     public function actionLogin(){
         $postData = Yii::$app->request->post();
         $validate = $this->validateRequestData($postData);
@@ -32,25 +36,44 @@ class AuthenticationController extends BaseController
         }
     }
 
+    /**
+     * 退出认证
+     */
+    public function actionLogout(){
+        Yii::$app->user->logout();
+        return $this->render('authsuccess');
+    }
+    /**
+     * 获取认证数据
+     *
+     * @return string
+     */
     public function actionGetIdentity(){
         $userArr = [];
         $identity = Yii::$app->user->identity;
-        foreach($identity as $k=>$v){
-            $userArr[$k] = $v;
+        if(!empty($identity)){
+            foreach($identity as $k=>$v){
+                $userArr[$k] = $v;
+            }
+            $AuthData = [
+                'code'=>0,
+                'msg'=>'',
+                'count'=>count(identity),
+                'data'=>[
+                    $userArr
+                ]
+            ];
+            return json_encode($AuthData,true);
+        }else{
+            return json_encode($userArr);
         }
-        $AuthData = [
-            'code'=>0,
-            'msg'=>'',
-            'count'=>count(identity),
-            'data'=>[
-                $userArr
-            ]
-        ];
-        return json_encode($AuthData,true);
     }
+
     /**
      * 验证－－认证数据
+     *
      * @param $post
+     * @return array
      */
     private function validateRequestData($post){
         $username = isset($post['username']) ? $post['username'] : '';

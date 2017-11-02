@@ -5,7 +5,7 @@
             <div class="layui-inline">
                 <label class="layui-form-label">认证名：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" lay-verify="required" autocomplete="off" class="layui-input">
+                    <input type="text" name="username" lay-verify="required" autocomplete="off" class="layui-input" value="admin">
                 </div>
                 <div class="layui-form-mid layui-word-aux">认证名是，手机号或邮箱</div>
             </div>
@@ -13,7 +13,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">密&nbsp&nbsp&nbsp码：</label>
             <div class="layui-input-inline">
-                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" value="123456">
             </div>
             <div class="layui-form-mid layui-word-aux">密码必须以大写字母开头</div>
         </div>

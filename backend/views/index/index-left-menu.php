@@ -1,10 +1,10 @@
 <!--css控制默认第一个为初始显示导航-->
 <ul class="layui-nav layui-nav-tree left-menu0"  lay-filter="test">
-    <li class="layui-nav-item">
+    <li class="layui-nav-item layui-nav-itemed">
         <a class="" href="javascript:;"><cite>安全（Security）</cite></a>
         <dl class="layui-nav-child">
             <dd><a href="javascript:;" data-url="/authentication/index" data-id="1">认证（Authentication）</a></dd>
-            <dd><a href="javascript:;" data-url="/yun/goods" data-id="2">授权（Authorization）</a></dd>
+            <dd><a href="javascript:;" data-url="/authorization/rbac" data-id="2">授权（Authorization）</a></dd>
             <dd><a href="javascript:;" data-url="/yun/table" data-id="3">处理密码（Working with Passwords）</a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="4">加密（Cryptography）</a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="4">视图安全（Views security）</a></dd>
