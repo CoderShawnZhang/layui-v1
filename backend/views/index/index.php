@@ -9,7 +9,7 @@
 
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
-        <div class="layui-logo">layui 后台布局</div>
+        <div class="layui-logo">Yii Framework 2.0 权威指南 </div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <?= $this->render('index-top-left.php');?>
         <?= $this->render('index-top-right.php');?>

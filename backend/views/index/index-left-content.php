@@ -24,7 +24,7 @@
         <div class="layui-tab-item layui-show">
             <div class="layui-tab-content clildFrame" style="padding: 0;">
                 <div class="layui-tab-item layui-show" lay-filter="bodyTab">
-                    <iframe scrolling="yes" id="iframeBox" name="iframName" frameborder="0" src="<?= \yii\helpers\Url::toRoute('index/desktop');?>" onload="iframload()"></iframe>
+                    <iframe scrolling="yes" id="iframeBox" name="iframName" frameborder="0" src="<?= \yii\helpers\Url::toRoute('yun/main');?>" onload="iframload()"></iframe>
                 </div>
             </div>
         </div>

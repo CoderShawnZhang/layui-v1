@@ -32,4 +32,8 @@ class YunController extends Controller
                 return json_encode($data);
 //        return $this->render('jsondata');
     }
+
+    public function actionMain(){
+        return $this->render('main');
+    }
 }

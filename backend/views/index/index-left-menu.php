@@ -1,24 +1,28 @@
 <!--css控制默认第一个为初始显示导航-->
 <ul class="layui-nav layui-nav-tree left-menu0"  lay-filter="test">
     <li class="layui-nav-item">
-        <a class="" href="javascript:;"><i class="iconfont icon-computer"></i><cite>制作导航</cite></a>
+        <a class="" href="javascript:;"><cite>安全（Security）</cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;" data-url="/yun/index" data-id="1">侧栏导航</a></dd>
-            <dd><a href="javascript:;" data-url="/yun/goods" data-id="2">顶部导航</a></dd>
-            <dd><a href="javascript:;" data-url="/yun/table" data-id="3">右上导航</a></dd>
-            <dd><a href="javascript:;" data-url="/yun/form" data-id="4">右侧导航</a></dd>
+            <dd><a href="javascript:;" data-url="/authentication/index" data-id="1">认证（Authentication）</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/goods" data-id="2">授权（Authorization）</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/table" data-id="3">处理密码（Working with Passwords）</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/form" data-id="4">加密（Cryptography）</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/form" data-id="4">视图安全（Views security）</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/form" data-id="4">客户端认证（Auth Clients）</a></dd>
+            <dd><a href="javascript:;" data-url="/yun/form" data-id="4">安全领域的最佳实践（Best Practices）</a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">
-        <a href="javascript:;"><i class="iconfont icon-computer"></i><cite>解决方案</cite></a>
+        <a href="javascript:;"><cite>缓存（Caching） </cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;">列表一</a></dd>
-            <dd><a href="javascript:;">列表二</a></dd>
-            <dd><a href="">超链接</a></dd>
+            <dd><a href="javascript:;">数据缓存（Data Caching）</a></dd>
+            <dd><a href="javascript:;">片段缓存（Fragment Caching）</a></dd>
+            <dd><a href="javascript:;">分页缓存（Page Caching）</a></dd>
+            <dd><a href="javascript:;">HTTP 缓存（HTTP Caching）</a></dd>
         </dl>
     </li>
-    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="5"><i class="iconfont icon-computer"></i><cite>云市场</cite></a></li>
-    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/goods" data-id="6"><i class="iconfont icon-computer"></i><cite>发布商品</cite></a></li>
+    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="5"><cite>云市场</cite></a></li>
+    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/goods" data-id="6"><cite>发布商品</cite></a></li>
 </ul>
 <ul class="layui-nav layui-nav-tree left-menu5" lay-filter="test">
     <li class="layui-nav-item">
