@@ -1,7 +1,7 @@
 <div class="layui-tab iframe-content-top" lay-filter="demo" lay-allowclose="true">
 
         <ul class="op-refresh">
-            <a href="javascript:;"><i class="iconfont icon-refresh"></i>刷新</a>
+            <a href="javascript:;"><i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop">ဂ</i>刷新</a>
         </ul>
         <ul class="layui-nav op-closeBox">
             <li class="layui-nav-item">

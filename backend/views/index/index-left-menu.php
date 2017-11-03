@@ -21,6 +21,32 @@
             <dd><a href="javascript:;">HTTP 缓存（HTTP Caching）</a></dd>
         </dl>
     </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;"><cite>缓存（Caching） </cite></a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;">数据缓存（Data Caching）</a></dd>
+            <dd><a href="javascript:;">片段缓存（Fragment Caching）</a></dd>
+            <dd><a href="javascript:;">分页缓存（Page Caching）</a></dd>
+            <dd><a href="javascript:;">HTTP 缓存（HTTP Caching）</a></dd>
+            <dd><a href="javascript:;">数据缓存（Data Caching）</a></dd>
+            <dd><a href="javascript:;">片段缓存（Fragment Caching）</a></dd>
+            <dd><a href="javascript:;">分页缓存（Page Caching）</a></dd>
+            <dd><a href="javascript:;">HTTP 缓存（HTTP Caching）</a></dd>
+            <dd><a href="javascript:;">数据缓存（Data Caching）</a></dd>
+            <dd><a href="javascript:;">片段缓存（Fragment Caching）</a></dd>
+            <dd><a href="javascript:;">分页缓存（Page Caching）</a></dd>
+            <dd><a href="javascript:;">HTTP 缓存（HTTP Caching）</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;"><cite>缓存（Caching） </cite></a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;">数据缓存（Data Caching）</a></dd>
+            <dd><a href="javascript:;">片段缓存（Fragment Caching）</a></dd>
+            <dd><a href="javascript:;">分页缓存（Page Caching）</a></dd>
+            <dd><a href="javascript:;">HTTP 缓存（HTTP Caching）</a></dd>
+        </dl>
+    </li>
     <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="5"><cite>云市场</cite></a></li>
     <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/goods" data-id="6"><cite>发布商品</cite></a></li>
 </ul>

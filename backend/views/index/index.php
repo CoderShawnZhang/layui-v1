@@ -16,6 +16,7 @@
     </div>
 
     <div class="layui-side layui-bg-black">
+
         <div class="layui-side-scroll">
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <?= $this->render('index-left-menu.php');?>

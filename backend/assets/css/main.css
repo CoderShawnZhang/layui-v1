@@ -22,11 +22,12 @@ iframe{
 .op-closeBox{
     position: absolute;
     right: 0;
-    height: 40px;
+    height: 39px;
+    top:3px;
     background: white;
     padding: 0;
     z-index: 1;
-    border-bottom: 5px solid #009688;
+    margin-right: 10px;
 }
 .op-closeBox .layui-nav-item{  line-height: 40px;  }
 .op-closeBox .layui-nav-item a{  color: black;  }
@@ -35,30 +36,37 @@ iframe{
 .op-closeBox dl{  top:40px;  }
 .op-refresh{
     position: absolute;
-    right: 115px;
+    right: 119px;
     border-left: 1px solid #e2e2e2;
-    height: 40px;
+    height: 39px;
+    top:3px;
     text-align: center;
     line-height: 40px;
     width: 70px;
     background: #5EB95E;
     cursor: pointer;
+    padding-right: 5px;
+}
+.op-refresh a{
+    color: white;
+}
+.op-refresh i{
+    margin-right: 5px;
 }
 /*导航与图标样式*/
 /*.layui-tab-title li i{*/
-    /*margin-right: 5px;*/
+/*margin-right: 5px;*/
 /*}*/
-.layui-this{
+.layui-tab-title .layui-this{
     background: #009688;
     color: white;
 }
 .layui-tab-title{
     height: 39px;
-    border-top: 5px solid #009688;
+    border-top: 3px solid #009688;
+    border-bottom: 1px solid #009688;
 }
-.layui-tab-title li {
-    border-top: 5px solid #009688;
-}
+
 .layui-tab-title li cite{
     font-style: normal;
     padding-left: 5px;
@@ -70,4 +78,9 @@ iframe{
 
 .layui-tab-title .layui-this:after{
     border:0;
+}
+
+.op-closeBox .layui-nav-more{
+    border-color: #009688 transparent transparent;
+    top: 17px;
 }
