@@ -12,23 +12,49 @@
     <div class="sysNotice col">
         <blockquote class="layui-elem-quote title">Yii 是什么</blockquote>
         <div class="layui-elem-quote layui-quote-nm">
-            <h3># v1.0.1（优化） - 2017-06-25</h3>
-            <p>* 修改刚进入页面无任何操作时按回车键提示“请输入解锁密码！”</p>
-            <p>* 优化关闭弹窗按钮的提示信息位置问题【可能是因为加载速度的原因，造成这个问题，所以将提示信息做了一个延时】</p>
-            <p>* “个人资料”提供修改功能</p>
-            <p>* 顶部天气信息自动判断位置【忘记之前是怎么想的做成北京的了，可能是我在大首都吧，哈哈。。。】</p>
-            <p>* 优化“用户列表”无法查询到新添加的用户【竟然是因为我把key值写错了，该死。。。】</p>
-            <p>* 将左侧菜单做成json方式调用，而不是js调用，方便开发使用。同时添加了参数配置和非窗口模式打开的判断，【如登录页面】</p>
-            <p>* 优化部分页面样式问题</p>
-            <p>* 优化添加窗时如果导航不存在图标无法添加成功</p>
-            <br />
-            <p># v1.0.1（新增） - 2017-07-05</p>
-            <p>* 增加“用户列表”批量删除功能【可能当时忘记添加了吧。。。】</p>
-            <p style="color:#f00;">* 顶部窗口导航添加“关闭其他”、“关闭全部”功能，同时修改菜单窗口过多的展示效果【在此感谢larryCMS给予的启发】</p>
-            <p>* 添加可隐藏左侧菜单功能【之前考虑没必要添加，但是很多朋友要求加上，那就加上吧，嘿嘿。。。】</p>
-            <p>* 增加换肤功能【之前就想添加的，但是一直没有找到好的方式（好吧，其实是我忘记了），此方法相对简单，不是普遍适用，只简单的做个功能，如果实际用到建议单独写一套样式，将边框颜色、按钮颜色等统一调整，此处为保证代码的简洁性，只做简单的功能，不做赘述，另外“自定义”颜色中未做校验，所以要写入正确的色值。如“#f00”】</p>
-            <p style="color:#f00;">* 增加登录页面【背景视频仅作样式参考，实际使用中请自行更换为其他视频或图片，否则造成的任何问题使用者本人承担。】</p>
-            <p>* 新增打开窗口的动画效果</p>
+            <ul class="layui-timeline">
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">8月18日</h3>
+                        <p>
+                            layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+                            <br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+                            <br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+                        </p>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">8月16日</h3>
+                        <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
+                        <ul>
+                            <li>《登高》</li>
+                            <li>《茅屋为秋风所破歌》</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">8月15日</h3>
+                        <p>
+                            中国人民抗日战争胜利72周年
+                            <br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+                            <br>铭记、感恩
+                            <br>所有为中华民族浴血奋战的英雄将士
+                            <br>永垂不朽
+                        </p>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                        <div class="layui-timeline-title">过去</div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="sysNotice col">

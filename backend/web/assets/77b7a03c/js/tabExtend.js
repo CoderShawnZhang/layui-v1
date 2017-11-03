@@ -47,6 +47,7 @@ layui.define(['element','jquery'],function(exports){
         var has = false;
         $("." + ul + " li").each(function(){
             eachCurTop = $(this).attr('lay-id');
+            $(this).addClass('itemedTopTab').siblings().removeClass('itemedTopTab').addClass('itemTopTab');
             if(clickTab == eachCurTop){
                 Tab.tabChange(eachCurTop)
                 has = true;
