@@ -1,8 +1,8 @@
 <ul class="layui-nav layui-layout-right" lay-filter="top-menu">
     <li class="layui-nav-item">
         <a href="javascript:;">
-            <img src="http://res.layui.com/images/fly/avatar/0.jpg" class="layui-nav-img">
-            admin
+            <img src="http://tva3.sinaimg.cn/crop.0.0.180.180.50/6683d81djw1e8qgp5bmzyj2050050aa8.jpg" class="layui-nav-img">
+            贤心
         </a>
         <dl class="layui-nav-child">
             <dd><a href="">基本资料</a></dd>

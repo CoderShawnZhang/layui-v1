@@ -12,5 +12,7 @@ use yii\base\Controller;
 
 class BaseController extends Controller
 {
-
+    public function actionList(){
+        return $this->render('list');
+    }
 }

@@ -89,3 +89,7 @@ iframe{
 .layui-side-scroll{
     padding-bottom: 200px;
 }
+/*重写表单，复选框上边距距离样式*/
+.layui-table-cell .layui-form-checkbox {
+    top: 5px;
+}
