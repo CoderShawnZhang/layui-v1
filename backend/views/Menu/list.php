@@ -1,56 +1,44 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: anlewo0208
- * Date: 2017/11/3
- * Time: 下午6:02
- */
-?>
+<fieldset class="layui-elem-field site-demo-button">
+    <legend>菜单操作</legend>
+    <div style="margin: 15px;">
+<!--        <button class="layui-btn layui-btn-primary">新增菜单</button>-->
+        <div class="layui-input-inline">
+            <input type="tel" name="phone" lay-verify="phone" autocomplete="off" class="layui-input" placeholder="查询菜单">
+        </div>
+        <button class="layui-btn layui-btn-warm">查询</button>
+        <button class="layui-btn"><a href="/menu/add">新增菜单</a></button>
+        <button class="layui-btn layui-btn-danger">禁用选中</button>
+<!--        <button class="layui-btn layui-btn-normal">删除选中</button>-->
+<!--        <button class="layui-btn layui-btn-warm">暖色按钮</button>-->
+<!--        <button class="layui-btn layui-btn-danger">警告按钮</button>-->
+<!--        <button class="layui-btn layui-btn-disabled">禁用按钮</button>-->
+    </div>
+</fieldset>
+    <table class="layui-table" lay-data="{height:'full-160', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/yun/json') ;?>', page:true, id:'test'}" lay-filter="test">
+        <thead>
+        <tr>
+            <th lay-data="{checkbox:true, fixed: true}"></th>
+            <th lay-data="{field:'id', width:80, fixed: true, sort: true}">ID</th>
+            <th lay-data="{field:'username', width:120, sort: true, edit: 'text', templet: '#usernameTpl'}">用户名</th>
+            <th lay-data="{field:'email', width:150}">邮箱</th>
+            <th lay-data="{field:'sex', width:80}">性别</th>
+            <th lay-data="{field:'city', width:100}">城市</th>
+            <th lay-data="{field:'sign', width:150}">签名</th>
+            <th lay-data="{field:'experience', width:80, sort: true, edit: 'text'}">积分</th>
+            <th lay-data="{field:'ip', width:120}">IP</th>
+            <th lay-data="{field:'logins', width:100}">登入次数</th>
+            <th lay-data="{field:'joinTime', width:120}">加入时间</th>
+            <th lay-data="{fixed: 'right', toolbar: '#barOption', width:150, align:'center'}">操作</th>
+        </tr>
+        </thead>
+    </table>
 <div class="layui-hide" id="barOption">
     <a class="layui-btn layui-btn-mini" data-type="t" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
     <a class="layui-btn layui-btn-small layui-btn-mini" lay-event="detail">查看</a>
 </div>
-
-<table id="demo"></table>
-<script>
-    layui.use(['table'],function(){
-       var table = layui.table;
-        window.demoTable = table.render({
-            elem:"#demo"
-            ,url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/yun/json') ;?>'
-//            ,data:[{"id":1,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":2,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":3,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":4,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":5,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":6,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":7,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":8,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":9,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123},{"id":10,"username":222,"email":333,"sex":444,"city":555,"sign":666,"experience":77,"ip":888,"logins":999,"joinTime":123}]
-            ,cols: [[ //标题栏
-            {checkbox: true, LAY_CHECKED: true} //默认全选
-            ,{field: 'id', title: 'ID', width: 80, sort: true}
-            ,{field: 'username', title: '用户名', width: 120}
-            ,{field: 'email', title: '邮箱', width: 150}
-            ,{field: 'sign', title: '签名', width: 150}
-            ,{field: 'sex', title: '性别', width: 80}
-            ,{field: 'city', title: '城市', width: 100}
-            ,{field: 'experience', title: '积分', width: 80, sort: true}
-        ]]
-            ,cols: [[ //标题栏
-                {space: true, fixed: true}
-                ,{checkbox: true, LAY_CHECKED: true}
-                ,{field: 'id', title: 'ID', width: 80, sort: true}
-                ,{field: 'username', title: '用户名', width: 120}
-                ,{field: 'email', title: '邮箱', width: 150}
-                ,{field: 'sex', title: '性别', width: 150}
-                ,{field: 'city', title: '城市', width: 100}
-                ,{field: 'sign', title: '签名', width: 150}
-                ,{field: 'experience', title: '积分', width: 80, sort: true}
-                ,{field: 'ip', title: 'IP', width: 80, sort: true}
-                ,{field: 'logins', title: '登入次数', width: 80, sort: true}
-                ,{field: 'joinTime', title: '加入时间', width: 80, sort: true}
-                ,{field: 'aaa', title: 'aaa', width:150}
-            ]]
-            ,height:270
-            ,skin: 'row' //表格风格
-            ,even: true
-            ,page: true //是否显示分页
-            ,limits: [5, 10, 15]
-            ,limit: 5 //每页默认显示的数量
+    <script>
+        layui.use(['table'],function(){
+            var table = layui.table;
         });
-    });
-</script>
+    </script>

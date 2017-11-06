@@ -28,17 +28,22 @@ class YunController extends Controller
     }
 
     public function actionJson(){
-        $data = ['code'=>0,'msg'=>'','count'=>1,'data'=>[
-            ['id'=>1,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>2,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>3,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>4,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>5,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>6,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>7,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>8,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>9,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
-            ['id'=>10,'username'=>222,'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123]
+        $page = \Yii::$app->request->get('page');
+        $page = $page-1+12;
+        $data = ['code'=>0,'msg'=>'','count'=>100,'data'=>[
+            ['id'=>1+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>2+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>3+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>4+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>5+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>6+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>7+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>8+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>9+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>10+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>11+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>11+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123],
+            ['id'=>12+$page,'username'=>rand(1,9999),'email'=>333,'sex'=>444,'city'=>555,'sign'=>666,'experience'=>77,'ip'=>888,'logins'=>999,'joinTime'=>123]
         ]];
 //    var_dump(json_encode($data));die;
                 return json_encode($data);

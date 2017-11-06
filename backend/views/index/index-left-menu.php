@@ -86,7 +86,7 @@
                 <a href="javascript:;" data-url="/menu/list" data-id="37">菜单列表</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="38">新增菜单</a>
+                <a href="javascript:;" data-url="/menu/add" data-id="38">新增菜单</a>
             </dd>
             <dd>
                 <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="38">菜单权限</a>
