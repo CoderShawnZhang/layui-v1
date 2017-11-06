@@ -18,4 +18,8 @@ class MenuController extends BaseController
         //获取菜单父级
         return $this->render('add');
     }
+
+    public function actionIcon(){
+        return $this->render('icon');
+    }
 }

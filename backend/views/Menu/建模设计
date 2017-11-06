@@ -1,0 +1,22 @@
+菜单表：
+    id:
+    pid:
+    title:
+    icon:
+    route:
+    is_hide:
+    is_disable:
+    created:
+    creatby:
+    updated:
+    modifyby:
+
+新增菜单页面：
+    父级菜单：
+    菜单名称
+    菜单图标【弹框选择】
+    菜单路由
+    显示/隐藏
+
+
+
