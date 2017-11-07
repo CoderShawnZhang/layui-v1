@@ -1,0 +1,2875 @@
+2017-11-07 16:29:26 [172.17.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'URL rule class must implement UrlRuleInterface.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/UrlManager.php:251
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(107): yii\web\UrlManager->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(568): yii\di\ServiceLocator->get('urlManager')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2-debug/Module.php(197): yii\base\Application->getUrlManager()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(320): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#14 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->__construct(Array)
+#15 {main}
+2017-11-07 16:29:25 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '5a1d31b6-0caf-4e45-aa5e-8d346aadbf44'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/'
+    'REQUEST_TIME_FLOAT' => 1510043365.5802
+    'REQUEST_TIME' => 1510043365
+]
+2017-11-07 16:29:32 [172.17.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'URL rule class must implement UrlRuleInterface.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/UrlManager.php:251
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(107): yii\web\UrlManager->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(568): yii\di\ServiceLocator->get('urlManager')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2-debug/Module.php(197): yii\base\Application->getUrlManager()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(320): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#14 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->__construct(Array)
+#15 {main}
+2017-11-07 16:29:32 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd93604bd-dd01-4c5e-a545-75cc0158f005'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user'
+    'REQUEST_TIME_FLOAT' => 1510043372.8247
+    'REQUEST_TIME' => 1510043372
+]
+2017-11-07 16:29:37 [172.17.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'URL rule class must implement UrlRuleInterface.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/UrlManager.php:251
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(107): yii\web\UrlManager->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/di/ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(568): yii\di\ServiceLocator->get('urlManager')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2-debug/Module.php(197): yii\base\Application->getUrlManager()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(320): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#14 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->__construct(Array)
+#15 {main}
+2017-11-07 16:29:37 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '9b18a707-08d0-47fb-a3d6-e82014f676e7'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043377.1961
+    'REQUEST_TIME' => 1510043377
+]
+2017-11-07 16:30:04 [172.17.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class layui\api\Modules\v1 does not exist' in /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php:424
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(424): ReflectionClass->__construct('layui\\api\\Modul...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('layui\\api\\Modul...')
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2017-11-07 16:30:04 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:30:04 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:30:04 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '01c7a3b3-3ef6-40bd-a433-b2395c26301c'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043404.1307
+    'REQUEST_TIME' => 1510043404
+]
+2017-11-07 16:30:43 [172.17.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class layui\api\Modules\v1 does not exist' in /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php:424
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(424): ReflectionClass->__construct('layui\\api\\Modul...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('layui\\api\\Modul...')
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2017-11-07 16:30:43 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:30:43 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:30:43 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'e689ca5b-33db-4187-aa1d-68a82e610883'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043443.294
+    'REQUEST_TIME' => 1510043443
+]
+2017-11-07 16:31:33 [172.17.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class layui\api\Modules\v1 does not exist' in /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php:424
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(424): ReflectionClass->__construct('layui\\api\\Modul...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('layui\\api\\Modul...')
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2017-11-07 16:31:33 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:31:33 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:31:33 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3651e776-abfe-42fd-abdb-933386a66339'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043493.1543
+    'REQUEST_TIME' => 1510043493
+]
+2017-11-07 16:31:45 [172.17.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class layui\api\Modules\v1 does not exist' in /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php:424
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(424): ReflectionClass->__construct('layui\\api\\Modul...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('layui\\api\\Modul...')
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2017-11-07 16:31:45 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:31:45 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:31:45 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54402'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '5efb2c96-6f2a-4f48-bacb-54d7fc613388'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043504.9312
+    'REQUEST_TIME' => 1510043504
+]
+2017-11-07 16:33:37 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(layui\api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:33:37 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:33:37 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54426'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '8317fb31-7031-48ad-8e05-15e07b1c460a'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043617.0267
+    'REQUEST_TIME' => 1510043617
+]
+2017-11-07 16:34:21 [172.17.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class layui\api\Modules\v1\Module does not exist' in /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php:424
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(424): ReflectionClass->__construct('layui\\api\\Modul...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('layui\\api\\Modul...')
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2017-11-07 16:34:21 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:34:21 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:34:21 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54426'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '71c59d54-0d23-48f5-8c65-0a65fe1897a2'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043661.1905
+    'REQUEST_TIME' => 1510043661
+]
+2017-11-07 16:34:27 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(layui\api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:34:27 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:34:26 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54426'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'b74bcb21-e523-4d46-a285-d1e6341b493e'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043666.9335
+    'REQUEST_TIME' => 1510043666
+]
+2017-11-07 16:35:07 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(layui\api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:35:07 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:35:07 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54426'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '54a5e3d7-492d-4d52-9f9c-6aa7af94592c'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510043707.4804
+    'REQUEST_TIME' => 1510043707
+]
+2017-11-07 16:41:59 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(layui\api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:41:59 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:41:59 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'e0624ce0-fe1a-4e0a-a9da-f7dd062609f7'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user'
+    'REQUEST_TIME_FLOAT' => 1510044119.1933
+    'REQUEST_TIME' => 1510044119
+]
+2017-11-07 16:42:03 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(layui\api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:42:03 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:42:03 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'e1cb24eb-2d41-4e41-b129-ab5d72f5e344'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044123.0673
+    'REQUEST_TIME' => 1510044123
+]
+2017-11-07 16:42:17 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(layui\api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('layui\\api\\Modul...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('layui\\api\\Modul...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:42:17 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:42:17 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'e29e0155-1946-43a7-83ea-56c2009a1116'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044137.5086
+    'REQUEST_TIME' => 1510044137
+]
+2017-11-07 16:42:57 [172.17.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php:528
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(528): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', '/data/www/layui...', 528, Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(api\Modules\v1\Module), 'v1')
+#2 [internal function]: yii\base\Object->__construct('v1', Object(yii\web\Application))
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('api\\Modules\\v1\\...', Array, Array)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('api\\Modules\\v1\\...', Array, Array)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('v1')
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('v1/user/index')
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#12 {main}
+2017-11-07 16:42:57 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:42:56 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'a4ed82d1-04fc-4b63-bc83-86701bc5714f'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044176.5386
+    'REQUEST_TIME' => 1510044176
+]
+2017-11-07 16:43:19 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:43:19 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '5445e2eb-a087-4380-96f8-04063c48b282'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044199.3788
+    'REQUEST_TIME' => 1510044199
+]
+2017-11-07 16:43:43 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:43:43 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3e9e063d-f812-4027-a3c9-264c3228bfb2'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044223.2546
+    'REQUEST_TIME' => 1510044223
+]
+2017-11-07 16:44:40 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:44:40 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '6e580db3-c6a2-4c27-9ad0-4cdc8b3bba8b'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044280.4869
+    'REQUEST_TIME' => 1510044280
+]
+2017-11-07 16:45:01 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Request.php:195
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2017-11-07 16:45:00 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '355562d2-e609-4149-89e0-62ba0a15689d'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044300.8805
+    'REQUEST_TIME' => 1510044300
+]
+2017-11-07 16:45:26 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Request.php:195
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2017-11-07 16:45:26 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:45:26 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:45:26 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'e3730462-6fa0-473e-aee2-5379733d0734'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044326.3238
+    'REQUEST_TIME' => 1510044326
+]
+2017-11-07 16:45:46 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Request.php:195
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2017-11-07 16:45:47 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:45:47 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:45:46 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '018a8846-dcf0-48f6-a292-d2b7fdabf215'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044346.7925
+    'REQUEST_TIME' => 1510044346
+]
+2017-11-07 16:46:28 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Request.php:195
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+2017-11-07 16:46:28 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:46:28 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:46:28 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'b8cc68d9-d36f-426a-9152-b8f88be44704'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044387.9812
+    'REQUEST_TIME' => 1510044387
+]
+2017-11-07 16:46:56 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:46:56 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:46:56 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:46:55 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '8b9b6562-decb-4439-b7c5-6ca683207cc7'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044415.5837
+    'REQUEST_TIME' => 1510044415
+]
+2017-11-07 16:47:51 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:47:51 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:47:51 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:47:51 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd4f7e443-789c-43c3-bb22-e5d1e08b13b9'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044471.0165
+    'REQUEST_TIME' => 1510044471
+]
+2017-11-07 16:48:37 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:48:37 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:48:37 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:48:36 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '481f0a99-03e9-4093-a0ea-296a7b4e51e6'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044516.5612
+    'REQUEST_TIME' => 1510044516
+]
+2017-11-07 16:49:34 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:49:34 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:49:34 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:49:34 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd25fd322-8ba6-4743-98ca-3eaca7ebcf9d'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044574.5552
+    'REQUEST_TIME' => 1510044574
+]
+2017-11-07 16:49:44 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:49:44 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:49:44 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:49:44 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'a1529426-7bc5-4436-ad7b-e41f8adb017e'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044584.7738
+    'REQUEST_TIME' => 1510044584
+]
+2017-11-07 16:51:02 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:51:02 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:51:02 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:51:02 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '4739ea6a-9d89-4e17-829e-1c0f13b59a52'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044662.2833
+    'REQUEST_TIME' => 1510044662
+]
+2017-11-07 16:51:41 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:51:41 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:51:41 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:51:40 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'c890a1ba-9fb2-4b64-8dc0-f2954eab27f1'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044700.8019
+    'REQUEST_TIME' => 1510044700
+]
+2017-11-07 16:52:00 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:52:00 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:52:00 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:52:00 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '8f579421-419b-42e7-b4c2-84671cd70ddf'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044720.1417
+    'REQUEST_TIME' => 1510044720
+]
+2017-11-07 16:53:26 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:53:26 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:53:26 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:53:26 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54524'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3195c6b0-b144-4c9c-8ca9-934b4569fee9'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044806.2254
+    'REQUEST_TIME' => 1510044806
+]
+2017-11-07 16:54:04 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:54:04 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:54:04 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:54:04 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54524'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '55f9dbc4-56a7-419c-b458-082ab7825622'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044844.2451
+    'REQUEST_TIME' => 1510044844
+]
+2017-11-07 16:55:14 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 16:55:14 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:55:14 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 16:55:14 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54524'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '02693717-9bec-4aff-a97e-f5c30d26063b'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510044914.5334
+    'REQUEST_TIME' => 1510044914
+]
+2017-11-07 17:00:18 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:00:18 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:00:18 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:00:18 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54532'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'c61a0cf1-9651-4cd2-b428-ba07fdf3503a'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510045218.1791
+    'REQUEST_TIME' => 1510045218
+]
+2017-11-07 17:15:06 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/users".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/users', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:15:06 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:15:06 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:15:06 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/users'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/users'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54536'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '35335293-6bc2-405b-bdff-18c9b1363752'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/users'
+    'REQUEST_TIME_FLOAT' => 1510046106.2283
+    'REQUEST_TIME' => 1510046106
+]
+2017-11-07 17:17:18 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/users".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/users', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:17:18 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:17:18 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:17:17 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/users'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/users'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'be37901c-b22c-4ac7-bd12-6dfb5c8189fe'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/users'
+    'REQUEST_TIME_FLOAT' => 1510046237.4605
+    'REQUEST_TIME' => 1510046237
+]
+2017-11-07 17:18:17 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/users".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/users', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:18:17 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:17 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:16 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/users'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/users'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'ca33dd49-242e-4a0e-9498-778c1e8da7d2'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/users'
+    'REQUEST_TIME_FLOAT' => 1510046296.8238
+    'REQUEST_TIME' => 1510046296
+]
+2017-11-07 17:18:46 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/users".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/users', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:18:46 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:46 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:45 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/users'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/users'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'c6ed181e-8575-45f6-b0c0-a975d09423ae'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/users'
+    'REQUEST_TIME_FLOAT' => 1510046325.5995
+    'REQUEST_TIME' => 1510046325
+]
+2017-11-07 17:18:47 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:18:47 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:47 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:47 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'e13d8b60-0679-4729-a0ee-eab7d6ce0438'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user'
+    'REQUEST_TIME_FLOAT' => 1510046327.6839
+    'REQUEST_TIME' => 1510046327
+]
+2017-11-07 17:18:51 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:18:51 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:51 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:18:51 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '1ad1eeed-4d4b-4b73-831e-731f7ecd0d16'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046331.7113
+    'REQUEST_TIME' => 1510046331
+]
+2017-11-07 17:19:16 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:19:16 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:19:16 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:19:16 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '04403238-e5da-4b6b-9a69-03cc727d3dc8'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046356.1705
+    'REQUEST_TIME' => 1510046356
+]
+2017-11-07 17:19:31 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:19:31 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:19:31 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:19:31 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'd1114f2c-2bfc-4bc1-adcf-1c6378f114be'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046370.9607
+    'REQUEST_TIME' => 1510046370
+]
+2017-11-07 17:19:41 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:19:41 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:19:41 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:19:41 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '43c7f9ce-385d-44dd-8801-5bc4ddc5b64f'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046381.6472
+    'REQUEST_TIME' => 1510046381
+]
+2017-11-07 17:20:04 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:20:04 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:20:04 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:20:04 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '34e00688-b377-4bec-91cd-67b4a419dca8'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046404.4228
+    'REQUEST_TIME' => 1510046404
+]
+2017-11-07 17:20:49 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/user/index".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:20:49 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:20:49 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:20:49 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '2d3d6aa9-e7d9-41e8-afc0-9da161b8beca'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046449.6747
+    'REQUEST_TIME' => 1510046449
+]
+2017-11-07 17:21:39 [172.17.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'api\Module\v1\Models\User' not found' in /data/www/layui-v1/vendor/yiisoft/yii2/rest/IndexAction.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-07 17:21:39 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:21:39 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'a35d354b-afca-4af6-916e-e628794db84a'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046499.0743
+    'REQUEST_TIME' => 1510046499
+]
+2017-11-07 17:22:36 [172.17.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'api\Module\v1\Models\User' not found' in /data/www/layui-v1/vendor/yiisoft/yii2/rest/IndexAction.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-07 17:22:36 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:22:36 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3868ccf4-7bd1-4756-a060-7e382e6d4fe9'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046555.9062
+    'REQUEST_TIME' => 1510046555
+]
+2017-11-07 17:23:01 [172.17.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'api\Module\v1\Models\User' not found' in /data/www/layui-v1/vendor/yiisoft/yii2/rest/IndexAction.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-07 17:23:01 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:23:01 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'a688c501-9ad0-4e1d-9252-dadd1d4c7fc5'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046580.9457
+    'REQUEST_TIME' => 1510046580
+]
+2017-11-07 17:23:16 [172.17.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'alw_order.alw_user' doesn't exist' in /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php:915
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(915): PDOStatement->execute()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(433): yii\db\Command->queryScalar()
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/db/ActiveQuery.php(339): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(186): yii\data\BaseDataProvider->getModels()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#14 /data/www/layui-v1/vendor/yiisoft/yii2/base/Controller.php(158): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#15 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#17 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'alw_order.alw_user' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `alw_user`' in /data/www/layui-v1/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(433): yii\db\Command->queryScalar()
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/db/ActiveQuery.php(339): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(186): yii\data\BaseDataProvider->getModels()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#14 /data/www/layui-v1/vendor/yiisoft/yii2/base/Controller.php(158): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#15 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#17 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'alw_order.alw_user' doesn't exist
+)
+
+2017-11-07 17:23:16 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:23:16 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '6eafa344-b1c6-4622-874c-e2fcc07de7cf'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046596.4671
+    'REQUEST_TIME' => 1510046596
+]
+2017-11-07 17:24:23 [172.17.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'alw_order.alw_user' doesn't exist' in /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php:915
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(915): PDOStatement->execute()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(433): yii\db\Command->queryScalar()
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/db/ActiveQuery.php(339): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(186): yii\data\BaseDataProvider->getModels()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#14 /data/www/layui-v1/vendor/yiisoft/yii2/base/Controller.php(158): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#15 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#17 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'alw_order.alw_user' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `alw_user`' in /data/www/layui-v1/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(433): yii\db\Command->queryScalar()
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/db/ActiveQuery.php(339): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(186): yii\data\BaseDataProvider->getModels()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#14 /data/www/layui-v1/vendor/yiisoft/yii2/base/Controller.php(158): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#15 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#17 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'alw_order.alw_user' doesn't exist
+)
+
+2017-11-07 17:24:23 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:24:23 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'a29cac66-b679-4a3b-904f-7d51cc018b14'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046663.3443
+    'REQUEST_TIME' => 1510046663
+]
+2017-11-07 17:24:43 [172.17.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'api\Modules\v1\Models\User' not found' in /data/www/layui-v1/vendor/yiisoft/yii2/rest/IndexAction.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-07 17:24:43 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:24:43 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54540'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '1b1df58f-e25a-47df-bb8c-0d3a221de2e1'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046683.2624
+    'REQUEST_TIME' => 1510046683
+]
+2017-11-07 17:26:29 [172.17.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'alw_order.alw_user' doesn't exist' in /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php:915
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(915): PDOStatement->execute()
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(433): yii\db\Command->queryScalar()
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/db/ActiveQuery.php(339): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(186): yii\data\BaseDataProvider->getModels()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#14 /data/www/layui-v1/vendor/yiisoft/yii2/base/Controller.php(158): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#15 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#17 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'alw_order.alw_user' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `alw_user`' in /data/www/layui-v1/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(433): yii\db\Command->queryScalar()
+#3 /data/www/layui-v1/vendor/yiisoft/yii2/db/ActiveQuery.php(339): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#4 /data/www/layui-v1/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('COUNT(*)', NULL)
+#5 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(169): yii\db\Query->count('*', NULL)
+#6 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /data/www/layui-v1/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#9 /data/www/layui-v1/vendor/yiisoft/yii2/data/BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#10 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(186): yii\data\BaseDataProvider->getModels()
+#11 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Serializer.php(152): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#12 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#13 /data/www/layui-v1/vendor/yiisoft/yii2/rest/Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#14 /data/www/layui-v1/vendor/yiisoft/yii2/base/Controller.php(158): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#15 /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#16 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/user/index', Array)
+#17 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'alw_order.alw_user' doesn't exist
+)
+
+2017-11-07 17:26:29 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:26:29 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '1600611d-795a-488d-b956-05cfc77cd955'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046788.9214
+    'REQUEST_TIME' => 1510046788
+]
+2017-11-07 17:26:57 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:26:57 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '770fdac4-f8e9-49f1-a835-da7fecd44b0e'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/index'
+    'REQUEST_TIME_FLOAT' => 1510046817.0656
+    'REQUEST_TIME' => 1510046817
+]
+2017-11-07 17:26:59 [172.17.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "v1/users".' in /data/www/layui-v1/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('v1/users', Array)
+#1 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /data/www/layui-v1/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /data/www/layui-v1/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /data/www/layui-v1/api/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-07 17:26:59 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:26:59 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:26:59 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/users'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/users'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '6e4ac6f6-54fd-478c-97f3-b80a6966f9cf'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/users'
+    'REQUEST_TIME_FLOAT' => 1510046819.4928
+    'REQUEST_TIME' => 1510046819
+]
+2017-11-07 17:27:02 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:27:01 [172.17.0.1][-][-][info][application] $_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '0ec8c45f-a5cb-4964-b123-62b9b7591c38'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user'
+    'REQUEST_TIME_FLOAT' => 1510046821.8551
+    'REQUEST_TIME' => 1510046821
+]
+2017-11-07 17:27:07 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:27:06 [172.17.0.1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/1'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/1'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '3a8cdaf5-2b79-4aa8-83ce-2d85da9f99c3'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/1'
+    'REQUEST_TIME_FLOAT' => 1510046826.7698
+    'REQUEST_TIME' => 1510046826
+]
+2017-11-07 17:27:10 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:27:10 [172.17.0.1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/2'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/2'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '9602d820-b585-484e-b4ad-7aaf629ad429'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/2'
+    'REQUEST_TIME_FLOAT' => 1510046830.288
+    'REQUEST_TIME' => 1510046830
+]
+2017-11-07 17:27:14 [172.17.0.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 172.17.0.1
+2017-11-07 17:27:14 [172.17.0.1][-][-][info][application] $_GET = [
+    'id' => '47'
+]
+
+$_SERVER = [
+    'USER' => 'www'
+    'HOME' => '/home/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/data/www/layui-v1/api/web/index.php'
+    'PATH_INFO' => '/v1/user/47'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/v1/user/47'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/data/www/layui-v1/api/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.1'
+    'REMOTE_ADDR' => '172.17.0.1'
+    'REMOTE_PORT' => '54582'
+    'SERVER_ADDR' => '172.17.0.2'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'layuiapi.local.anlewo.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '71b5a459-0e07-47b4-89b5-5ffb1f42d35d'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/3.0.11-hotfix.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_HOST' => 'layuiapi.local.anlewo.com:80'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/index.php/v1/user/47'
+    'REQUEST_TIME_FLOAT' => 1510046834.6699
+    'REQUEST_TIME' => 1510046834
+]
