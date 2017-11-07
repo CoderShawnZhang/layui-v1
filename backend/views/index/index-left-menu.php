@@ -15,7 +15,7 @@
     <li class="layui-nav-item">
         <a href="javascript:;"><i class="layui-icon"></i><cite>缓存（Caching） </cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;" data-id="8"><i class="layui-icon">&#xe641;</i><cite>数据缓存</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/cache/index" data-id="8"><i class="layui-icon">&#xe641;</i><cite>数据缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="9"><i class="layui-icon">&#xe615;</i><cite>片段缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="10"><i class="layui-icon">&#xe60f;</i><cite>分页缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="11"><i class="layui-icon">&#xe614;</i><cite>HTTP缓存</cite></a></dd>

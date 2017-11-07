@@ -14,9 +14,14 @@ class MenuController extends BaseController
     public function actionList(){
         return $this->render('list');
     }
+
     public function actionAdd(){
         //获取菜单父级
-        return $this->render('add');
+        $res = [];
+        if(\Yii::$app->request->isPost){
+
+        }
+        return $this->render('add',['res' => $res]);
     }
 
     public function actionIcon(){
