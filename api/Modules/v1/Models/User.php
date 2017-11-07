@@ -10,7 +10,9 @@ namespace api\Modules\v1\Models;
 
 
 use yii\filters\RateLimitInterface;
+use yii\helpers\Url;
 use yii\web\IdentityInterface;
+use yii\web\Link;
 
 Class User extends \yii\db\ActiveRecord implements IdentityInterface,RateLimitInterface {
 
@@ -81,5 +83,11 @@ Class User extends \yii\db\ActiveRecord implements IdentityInterface,RateLimitIn
             return 3333;
         };
         return $fields;
+    }
+    public function getLinks()
+    {
+        return [
+            Link::REL_SELF => Url::to(['user','id'=>$this->id],true),
+        ];
     }
 }

@@ -28,8 +28,8 @@ class BaseController extends Controller{
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
             //QueryParamAuth 认证需要在URL里带入access-token请求认证：layuiapi.local.anlewo.com:80/v1/user?access-token=ddf061559c21b91e2e516f32c7863493
-//            'class' => QueryParamAuth::className(),
-            'class' => HttpBearerAuth::className(),
+            'class' => QueryParamAuth::className(),
+//            'class' => HttpBearerAuth::className(),
             'tokenParam' => 'token',
 //            'class' => QueryParamAuth::className(),
         ];
