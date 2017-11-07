@@ -24,7 +24,7 @@ return [
             'identityClass' => 'api\Modules\v1\Models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
-            'loginUrl' => ['goods/index'],
+            'loginUrl' => null,
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend

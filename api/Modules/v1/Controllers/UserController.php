@@ -7,12 +7,24 @@
  * Time: 下午4:12
  */
 namespace api\Modules\v1\Controllers;
-use yii\rest\ActiveController;
+use api\Controllers\BaseController;
 
-class UserController extends ActiveController
+use yii\filters\auth\HttpBasicAuth;
+use yii\rest\Controller;
+use Yii;
+
+class UserController extends BaseController
 {
     public $modelClass = 'api\Modules\v1\Models\User';
+
+    public function actions()
+    {
+        $actions = parent::actions();
+//        unset($actions['index'],$actions['view'],$actions['create']);
+        return $actions;
+    }
+
     public function actionIndex(){
-       return 123;
+       return Yii::$app->user->identity->allowance;
     }
 }
