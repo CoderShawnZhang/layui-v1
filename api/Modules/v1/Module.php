@@ -9,7 +9,9 @@
 namespace api\Modules\v1;
 
 
-class Module extends \yii\base\Module
+use yii\base\BootstrapInterface;
+
+class Module extends \yii\base\Module implements BootstrapInterface
 {
     public $controllerNamespace = 'api\Modules\v1\Controllers';
 
@@ -17,6 +19,30 @@ class Module extends \yii\base\Module
     {
         parent::init();
 
-        // custom initialization code goes here
+    }
+
+    /**
+     * 路由规则
+     *
+     * @param \yii\base\Application $app
+     */
+    public function bootstrap($app)
+    {
+        $app->getUrlManager()->addRules([
+            [
+                'class' => 'yii\rest\UrlRule',
+                'controller' => ['v1/user'],
+                'extraPatterns' => [
+                    'GET,POST index' => 'index',
+                ]
+            ],
+            [
+                'class' => 'yii\rest\UrlRule',
+                'controller' => ['v1/order'],
+                'extraPatterns' => [
+                    'GET,POST index' => 'index',
+                ]
+            ],
+        ]);
     }
 }

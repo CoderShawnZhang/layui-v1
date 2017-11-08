@@ -22,7 +22,7 @@
         </dl>
     </li>
     <li class="layui-nav-item">
-        <a href="javascript:;"><i class="layui-icon"></i><cite>缓存（Caching） </cite></a>
+        <a href="javascript:;"><i class="layui-icon"></i><cite>应用结构（Application Structure）</cite></a>
         <dl class="layui-nav-child">
             <dd><a href="javascript:;" data-id="12"><i class="layui-icon">&#x1006;</i><cite>数据缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="13"><i class="layui-icon">&#x1007;</i><cite>片段缓存</cite></a></dd>
@@ -39,16 +39,21 @@
         </dl>
     </li>
     <li class="layui-nav-item">
-        <a href="javascript:;"><i class="layui-icon"></i><cite>缓存（Caching） </cite></a>
+        <a href="javascript:;"><i class="layui-icon"></i><cite>RESTful Web 服务</cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;" data-id="24"><i class="layui-icon">&#xe62d;</i><cite>数据缓存</a></dd>
-            <dd><a href="javascript:;" data-id="25"><i class="layui-icon">&#xe62e;</i><cite>片段缓存</a></dd>
-            <dd><a href="javascript:;" data-id="26"><i class="layui-icon">&#xe62f;</i><cite>分页缓存</a></dd>
-            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>HTTP缓存</a></dd>
+            <dd><a href="javascript:;" data-id="24" data-url="/restfulapi/quick-start"><i class="layui-icon">&#xe62d;</i><cite>快速入门</a></dd>
+            <dd><a href="javascript:;" data-id="25" data-url="/restfulapi/resources"><i class="layui-icon">&#xe62e;</i><cite>资源</a></dd>
+            <dd><a href="javascript:;" data-id="26"><i class="layui-icon">&#xe62f;</i><cite>控制器</a></dd>
+            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>路由</a></dd>
+            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>格式化响应</a></dd>
+            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>授权验证</a></dd>
+            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>速率限制</a></dd>
+            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>版本化</a></dd>
+            <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>错误处理</a></dd>
         </dl>
     </li>
-    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="28"><i class="layui-icon"></i><cite>云市场</cite></a></li>
-    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/goods" data-id="29"><i class="layui-icon"></i><cite>发布商品</cite></a></li>
+    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="28"><i class="layui-icon"></i><cite>小部件（Widgets）</cite></a></li>
+    <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/goods" data-id="29"><i class="layui-icon"></i><cite>显示数据</cite></a></li>
 </ul>
 <ul class="layui-nav layui-nav-tree left-menu5" lay-filter="test">
     <li class="layui-nav-item">

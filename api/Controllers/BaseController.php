@@ -1,20 +1,23 @@
 <?php
-
+/**
+ *
+ * RESTful API控制器继承的 是 ActiveController 。
+ */
 namespace api\Controllers;
 
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\RateLimiter;
-use yii\rest\Controller;
+use yii\rest\ActiveController;
 use yii\filters\auth\HttpBasicAuth;
 use Yii;
-class BaseController extends Controller{
+class BaseController extends ActiveController {
 
     public function init()
     {
         parent::init();
         // 因为RESTful APIs应为无状态的， 当yii\web\User::enableSession为false，
         // 请求中的用户认证状态就不能通过session来保持。
-        Yii::$app->user->enableSession = false;
+//        Yii::$app->user->enableSession = false;
     }
 
     public function behaviors()
@@ -31,7 +34,6 @@ class BaseController extends Controller{
             'class' => QueryParamAuth::className(),
 //            'class' => HttpBearerAuth::className(),
             'tokenParam' => 'token',
-//            'class' => QueryParamAuth::className(),
         ];
 
         //访问速率
