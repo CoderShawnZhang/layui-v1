@@ -123,7 +123,13 @@
                     <i class="layui-icon layui-timeline-axis"></i>
                     <div class="layui-timeline-content layui-text">
                         <h3 class="layui-timeline-title">5、验证权限</h3>
-                        <button class="layui-btn">5、验证权限</button>
+                        <form action="/authorization/check-permission" method="post">
+                            <label class="layui-form-label">查看权限</label>
+                            <div class="layui-inline">
+                                <input type="text" name="action" required lay-verify="required" placeholder="admin" autocomplete="off" class="layui-input">
+                            </div>
+                            <button class="layui-btn">5、验证权限</button>
+                        </form>
                     </div>
                 </li>
             </ul>

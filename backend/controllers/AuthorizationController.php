@@ -132,8 +132,8 @@ class AuthorizationController extends BaseController
     {
         //auth_item_child 角色与权限关心对应表
         $auth = Yii::$app->authManager;
-        $parent = $auth->createRole('admin');                //创建角色对象
-        $child = $auth->createPermission('aaa');            //创建权限对象
+        $parent = $auth->createRole('店长');                //创建角色对象
+        $child = $auth->createPermission('check-permission');            //创建权限对象
         $auth->addChild($parent, $child);                           //添加对应关系
         return $this->render('rbac');
     }
@@ -149,5 +149,24 @@ class AuthorizationController extends BaseController
         $user_id = 1;                                             //获取用户id，此处假设用户id=1
         $auth->assign($role, $user_id);                           //添加对应关系
         return $this->render('rbac');
+    }
+
+    /**
+     * 验证权限
+     * @param \yii\base\Action $action
+     *
+     * @return bool
+     * @throws \yii\web\UnauthorizedHttpException
+     */
+    public function actionCheckPermission()
+    {
+//        $action = Yii::$app->request->post('action');
+
+        $action = Yii::$app->controller->action->id;
+        if(Yii::$app->user->can($action)){
+            return true;
+        }else{
+            throw new \yii\web\UnauthorizedHttpException('对不起，您现在还没获此操作的权限');
+        }
     }
 }

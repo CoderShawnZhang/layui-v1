@@ -76,7 +76,7 @@ class AuthenticationController extends BaseController
      * @return array
      */
     private function validateRequestData($post){
-        $username = isset($post['username']) ? $post['username'] : '';
+        $username = isset($post['name']) ? $post['name'] : '';
         $password = isset($post['password']) ? $post['password'] : '';
         if(empty($password)){
             return ['success' => false,'msg' => '密码不能为空！'];
