@@ -5,7 +5,7 @@
  */
 namespace api\Controllers;
 
-use api\Modules\v1\Filters\APIAuth;
+use api\Modules\Filters\APIAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\RateLimiter;
 use yii\rest\ActiveController;

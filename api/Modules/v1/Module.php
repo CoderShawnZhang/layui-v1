@@ -35,13 +35,6 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
                 ]
             ],
-            [
-                'class' => 'yii\rest\UrlRule',
-                'controller' => ['v1/order'],
-                'extraPatterns' => [
-
-                ]
-            ],
         ]);
     }
 }

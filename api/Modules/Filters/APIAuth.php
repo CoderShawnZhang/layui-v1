@@ -6,7 +6,7 @@
  * Date: 2017/11/9
  * Time: 上午9:34
  */
-namespace api\Modules\v1\Filters;
+namespace api\Modules\Filters;
 
 use yii\filters\auth\QueryParamAuth;
 

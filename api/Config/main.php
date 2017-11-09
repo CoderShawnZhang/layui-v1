@@ -15,6 +15,10 @@ return [
         'v1'=>[
             'class' => 'api\Modules\v1\Module',
             'basePath' => '@app/Modules/v1',
+        ],
+        'v2' => [
+            'class' => 'api\Modules\v2\Module',
+            'basePath' => '@app/Modules/v2',
         ]
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
@@ -54,7 +58,8 @@ return [
                 // 'GET,HEAD users' => '<controller>/index',
                 // ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/site', 'v1/login']],
                 // ['class' => 'yii\rest\UrlRule', 'controller' => ['v2/site', 'v2/login']],
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v2/user']],
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/user']],
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['v2/orders']],
             ],
         ],
         'redis' => [
