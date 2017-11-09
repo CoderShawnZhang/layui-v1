@@ -18,7 +18,6 @@ class Module extends \yii\base\Module implements BootstrapInterface
     public function init()
     {
         parent::init();
-
     }
 
     /**
@@ -33,14 +32,14 @@ class Module extends \yii\base\Module implements BootstrapInterface
                 'class' => 'yii\rest\UrlRule',
                 'controller' => ['v1/user'],
                 'extraPatterns' => [
-                    'GET,POST index' => 'index',
+
                 ]
             ],
             [
                 'class' => 'yii\rest\UrlRule',
                 'controller' => ['v1/order'],
                 'extraPatterns' => [
-                    'GET,POST index' => 'index',
+
                 ]
             ],
         ]);

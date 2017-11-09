@@ -34,4 +34,4 @@ phpunit.phar
 # vagrant runtime
 /.vagrant
 /backend/web/assets
-/api/runtime
+/api/runtime/debug

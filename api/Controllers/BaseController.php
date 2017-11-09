@@ -5,6 +5,7 @@
  */
 namespace api\Controllers;
 
+use api\Modules\v1\Filters\APIAuth;
 use yii\filters\auth\QueryParamAuth;
 use yii\filters\RateLimiter;
 use yii\rest\ActiveController;
@@ -31,8 +32,9 @@ class BaseController extends ActiveController {
         $behaviors = parent::behaviors();
         $behaviors['authenticator'] = [
             //QueryParamAuth 认证需要在URL里带入access-token请求认证：layuiapi.local.anlewo.com:80/v1/user?access-token=ddf061559c21b91e2e516f32c7863493
-            'class' => QueryParamAuth::className(),
+//            'class' => QueryParamAuth::className(),
 //            'class' => HttpBearerAuth::className(),
+              'class' => APIAuth::className(),
             'tokenParam' => 'token',
         ];
 

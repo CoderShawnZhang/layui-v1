@@ -50,6 +50,7 @@
             <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>速率限制</a></dd>
             <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>版本化</a></dd>
             <dd><a href="javascript:;" data-id="27"><i class="layui-icon">&#xe61f;</i><cite>错误处理</a></dd>
+            <dd><a href="javascript:;" data-id="27" data-url="/restfulapi/route-rules"><i class="layui-icon">&#xe61f;</i><cite>路由规则</a></dd>
         </dl>
     </li>
     <li class="layui-nav-item"><a href="javascript:;" data-url="/yun/index" data-id="28"><i class="layui-icon"></i><cite>小部件（Widgets）</cite></a></li>

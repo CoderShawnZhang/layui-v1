@@ -25,7 +25,7 @@ return [
         'user' => [
             'identityClass' => 'api\Modules\v1\Models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => false,
+            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
             'loginUrl' => null,
         ],
         'log' => [

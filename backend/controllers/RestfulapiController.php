@@ -18,4 +18,11 @@ class RestfulapiController extends BaseController
     public function actionResources(){
         return $this->render('resources');
     }
+
+    /**
+     * 路由规则
+     */
+    public function actionRouteRules(){
+        return $this->render('routerules');
+    }
 }
