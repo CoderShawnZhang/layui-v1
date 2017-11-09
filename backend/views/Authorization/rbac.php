@@ -1,17 +1,145 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: zhanghongbo
- * Date: 17/11/2
- * Time: 下午9:01
- */
+<style>
+    .layui-tab-card>.layui-tab-title .layui-this{background: #5d6982;}
 
-echo 'rbac';
+    .layui-text a{color: white;}
+</style>
 
-?>
+<div class="layui-tab layui-tab-card">
+    <ul class="layui-tab-title">
+        <li class="layui-this">配置RBAC</li>
+        <li>建立授权数据</li>
+        <li>添加角色和权限</li>
+        <li>商品管理</li>
+        <li>订单管理</li>
+    </ul>
+    <div class="layui-tab-content" style="height:auto;">
+        <div class="layui-tab-item layui-show">
+            <div class="layui-elem-quote" style="margin-top: 20px;">
+                <p>1，在common/config/main-local.php添加如下代码</p>
+            </div>
+<pre class="layui-code" lay-title="配置RBAC" lay-skin="notepad">
+'authManager' => [
+    'class' => 'yii\rbac\DbManager',
+    'itemTable' => 'auth_item',
+    'assignmentTable' => 'auth_assignment',
+    'itemChildTable' => 'auth_item_child',
+],
+</pre>
+<div class="layui-elem-quote" style="margin-top: 20px;">
+      <p>2，执行：php yii migrate --migrationPath=@yii/rbac/migrations/</p>
+      <p>成功后生成4张表：auth_assignment，auth_item，auth_item_child，auth_rule</p>
+</div>
+        </div>
+        <div class="layui-tab-item">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>建立授权数据</legend>
+            </fieldset>
+            <ul class="layui-timeline">
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">1、创建权限；</h3>
+                        <table class="layui-table" lay-data="{height:'full-600', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/permission-list') ;?>', page:true, id:'test'}" lay-filter="test">
+                            <thead>
+                            <tr>
+                                <th lay-data="{field:'permission', width:150}">权限名称</th>
+                                <th lay-data="{fixed: 'right', toolbar: '#barOption', width:200, align:'center'}">操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div class="layui-hide" id="barOption">
+                            <a class="layui-btn layui-btn-mini" data-type="t" lay-event="edit">授权</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+                            <a class="layui-btn layui-btn-small layui-btn-mini" lay-event="detail">查看用户</a>
+                        </div>
+                        <form action="/authorization/create-permission" method="post">
+                            <label class="layui-form-label">权限名称</label>
+                            <div class="layui-inline">
+                                <input type="text" name="name" required lay-verify="required" placeholder="createPost" autocomplete="off" class="layui-input">
+                            </div>
+                            <button class="layui-btn">1、创建权限</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">2、创建角色</h3>
+                        <table class="layui-table" lay-data="{height:'full-600', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/role-list') ;?>', page:true, id:'test'}" lay-filter="test">
+                            <thead>
+                            <tr>
+                                <th lay-data="{field:'role', width:150}">角色名称</th>
+                                <th lay-data="{fixed: 'right', toolbar: '#barOption', width:200, align:'center'}">操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div class="layui-hide" id="barOption">
+                            <a class="layui-btn layui-btn-mini" data-type="t" lay-event="edit">授权</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+                            <a class="layui-btn layui-btn-small layui-btn-mini" lay-event="detail">查看用户</a>
+                        </div>
+                        <form action="/authorization/create-role" method="post">
+                            <label class="layui-form-label">角色名称</label>
+                            <div class="layui-inline">
+                                <input type="text" name="name" required lay-verify="required" placeholder="admin" autocomplete="off" class="layui-input">
+                            </div>
+                            <button class="layui-btn layui-btn-normal">2、创建角色</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">3、将权限赋给角色</h3>
+                        <table class="layui-table" lay-data="{height:'full-600', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/role-permission-list') ;?>', page:true, id:'test'}" lay-filter="test">
+                            <thead>
+                            <tr>
+                                <th lay-data="{field:'role', width:150}">角色名称</th>
+                                <th lay-data="{field:'permission', width:150}">拥有的权限</th>
+                                <th lay-data="{fixed: 'right', toolbar: '#barOption', width:200, align:'center'}">操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <div class="layui-hide" id="barOption">
+                            <a class="layui-btn layui-btn-mini" data-type="t" lay-event="edit">授权</a>
+                            <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+                            <a class="layui-btn layui-btn-small layui-btn-mini" lay-event="detail">查看用户</a>
+                        </div>
+                        <form action="/authorization/add-child" method="post">
+                            <button class="layui-btn">将权限赋给角色</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">4、将角色赋给用户</h3>
+                        <form action="/authorization/add-assign" method="post">
+                            <button class="layui-btn">4、将角色赋给用户</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">5、验证权限</h3>
+                        <button class="layui-btn">5、验证权限</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="layui-tab-item">
+            111
+        </div>
+        <div class="layui-tab-item">4</div>
+        <div class="layui-tab-item">5</div>
+        <div class="layui-tab-item">6</div>
+    </div>
+</div>
 
-
-
-<form action="/authorization/special-callback">
-    <button type="submit" class="layui-btn">访问special-callback</button>
-</form>
+<script>
+    layui.use(['code','table'], function(){
+        layui.code();  //实际使用时，执行该方法即可。而此处注释是因为修饰器在别的js中已经执行过了
+        var table = layui.table;
+    });
+</script>
