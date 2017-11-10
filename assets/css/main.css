@@ -88,6 +88,8 @@ iframe{
 .layui-side-scroll{
     padding-bottom: 200px;
 }
-.laytable-cell-checkbox {
-    top: 5px;
+/*重写表单复选框上边距距离样式*/
+.laytable-cell-checkbox{
+    top:5px;
+    padding-top: 1px;
 }

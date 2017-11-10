@@ -10,6 +10,7 @@
             <dd><a href="javascript:;" data-url="/yun/form" data-id="5"><i class="layui-icon">&#xe6ed;</i><cite>视图安全</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="6"><i class="layui-icon">&#xe6fc;</i><cite>客户端认证</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="7"><i class="layui-icon">&#xe611;</i><cite>安全领域的最佳实践</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/widgets/list" data-id="7"><i class="layui-icon">&#xe611;</i><cite>小部件</cite></a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">

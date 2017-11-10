@@ -16,6 +16,12 @@ class BaseController extends Controller
         $this->render($view,$data);
     }
 
+    /**
+     * 返回layui框架table需要的数据结构
+     * @param $tableData
+     *
+     * @return string
+     */
     public function tableDataHeader($tableData){
         $data = ['code'=>0,'msg'=>'','count'=>100,'data'=>$tableData];
         return json_encode($data);
