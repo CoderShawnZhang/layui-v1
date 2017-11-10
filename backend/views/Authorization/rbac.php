@@ -4,13 +4,14 @@
     .layui-text a{color: white;}
 </style>
 
-<div class="layui-tab layui-tab-card">
+<div class="layui-tab layui-tab-card" lay-filter="rbacTab">
     <ul class="layui-tab-title">
-        <li class="layui-this">配置RBAC</li>
-        <li>建立授权数据</li>
-        <li>添加角色和权限</li>
-        <li>商品管理</li>
-        <li>订单管理</li>
+        <li class="layui-this" lay-id="1">配置RBAC</li>
+        <li lay-id="2">创建权限</li>
+        <li lay-id="3">创建角色</li>
+        <li lay-id="4">将权限赋给角色</li>
+        <li lay-id="5">将角色赋给用户</li>
+        <li lay-id="6">验证权限</li>
     </ul>
     <div class="layui-tab-content" style="height:auto;">
         <div class="layui-tab-item layui-show">
@@ -32,14 +33,14 @@
         </div>
         <div class="layui-tab-item">
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-                <legend>建立授权数据</legend>
+                <legend>创建权限</legend>
             </fieldset>
             <ul class="layui-timeline">
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis"></i>
                     <div class="layui-timeline-content layui-text">
                         <h3 class="layui-timeline-title">1、创建权限；</h3>
-                        <table class="layui-table" lay-data="{height:'full-600', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/permission-list') ;?>', page:true, id:'test'}" lay-filter="test">
+                        <table class="layui-table" lay-data="{height:'full-300', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/permission-list') ;?>', page:true, id:'test'}" lay-filter="test">
                             <thead>
                             <tr>
                                 <th lay-data="{field:'permission', width:150}">权限名称</th>
@@ -55,17 +56,25 @@
                         <form action="/authorization/create-permission" method="post">
                             <label class="layui-form-label">权限名称</label>
                             <div class="layui-inline">
+                                <input type="hidden" name="tab" value="1"/>
                                 <input type="text" name="name" required lay-verify="required" placeholder="createPost" autocomplete="off" class="layui-input">
                             </div>
                             <button class="layui-btn">1、创建权限</button>
                         </form>
                     </div>
                 </li>
+            </ul>
+        </div><!--创建权限-->
+        <div class="layui-tab-item">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>创建角色</legend>
+            </fieldset>
+            <ul class="layui-timeline">
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis"></i>
                     <div class="layui-timeline-content layui-text">
                         <h3 class="layui-timeline-title">2、创建角色</h3>
-                        <table class="layui-table" lay-data="{height:'full-600', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/role-list') ;?>', page:true, id:'test'}" lay-filter="test">
+                        <table class="layui-table" lay-data="{height:'full-300', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/role-list') ;?>', page:true, id:'test'}" lay-filter="test">
                             <thead>
                             <tr>
                                 <th lay-data="{field:'role', width:150}">角色名称</th>
@@ -87,11 +96,18 @@
                         </form>
                     </div>
                 </li>
+            </ul>
+        </div><!--创建角色-->
+        <div class="layui-tab-item">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>将权限赋给角色</legend>
+            </fieldset>
+            <ul class="layui-timeline">
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis"></i>
                     <div class="layui-timeline-content layui-text">
                         <h3 class="layui-timeline-title">3、将权限赋给角色</h3>
-                        <table class="layui-table" lay-data="{height:'full-600', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/role-permission-list') ;?>', page:true, id:'test'}" lay-filter="test">
+                        <table class="layui-table" lay-data="{height:'full-300', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/authorization/role-permission-list') ;?>', page:true, id:'test'}" lay-filter="test">
                             <thead>
                             <tr>
                                 <th lay-data="{field:'role', width:150}">角色名称</th>
@@ -110,6 +126,13 @@
                         </form>
                     </div>
                 </li>
+            </ul>
+        </div><!--将权限赋给角色-->
+        <div class="layui-tab-item">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>将角色赋给用户</legend>
+            </fieldset>
+            <ul class="layui-timeline">
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis"></i>
                     <div class="layui-timeline-content layui-text">
@@ -119,6 +142,13 @@
                         </form>
                     </div>
                 </li>
+            </ul>
+        </div><!--将角色赋给用户-->
+        <div class="layui-tab-item">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>验证权限</legend>
+            </fieldset>
+            <ul class="layui-timeline">
                 <li class="layui-timeline-item">
                     <i class="layui-icon layui-timeline-axis"></i>
                     <div class="layui-timeline-content layui-text">
@@ -133,19 +163,15 @@
                     </div>
                 </li>
             </ul>
-        </div>
-        <div class="layui-tab-item">
-            111
-        </div>
-        <div class="layui-tab-item">4</div>
-        <div class="layui-tab-item">5</div>
-        <div class="layui-tab-item">6</div>
+        </div><!--验证权限-->
     </div>
 </div>
 
 <script>
-    layui.use(['code','table'], function(){
+    layui.use(['code','table','element'], function(){
         layui.code();  //实际使用时，执行该方法即可。而此处注释是因为修饰器在别的js中已经执行过了
-        var table = layui.table;
+        var table = layui.table,
+        element = layui.element;
+        element.tabChange('rbacTab','<?php echo $tabIndex;?>'); //切换到当前选项卡
     });
 </script>

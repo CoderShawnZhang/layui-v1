@@ -93,6 +93,8 @@ class AuthorizationController extends BaseController
 
         return $this->tableDataHeader($tableData);
     }
+
+
     //==================================================================================================================
     /**
      * 创建权限
@@ -106,9 +108,15 @@ class AuthorizationController extends BaseController
         $createPost = $auth->createPermission($name);
         $createPost->description = '创建了 ' . $name. ' 权限';
         $auth->add($createPost);
-        return $this->render('rbac');
+        return $this->render('rbac',['tabIndex'=>2]);
     }
 
+    /**
+     * 删除权限
+     */
+    public function actionRemovePermission(){
+
+    }
     /**
      * 创建角色
      * @return string

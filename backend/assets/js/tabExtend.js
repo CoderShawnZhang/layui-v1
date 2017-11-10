@@ -21,7 +21,7 @@ layui.define(['element','jquery'],function(exports){
         //新增一个Tab项
         tabIdIndex=_this.data('id');
         element.tabAdd(that.tabConfig.tabFilter, {
-            title: _this.text() //用于演示
+            title: _this.html() //用于演示
             ,content: "<iframe src='"+_this.data('url')+"' data-id='"+tabIdIndex+"'></frame>"
             ,id: tabIdIndex //实际使用一般是规定好的id，这里以时间戳模拟下
         });
