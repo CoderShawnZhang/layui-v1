@@ -2,7 +2,7 @@
     <thead>
     <tr>
         <th lay-data="{checkbox:true, fixed: true}"></th>
-        <th lay-data="{field:'id', width:80, fixed: true, sort: true}">小部件ID</th>
+        <th lay-data="{field:'id', width:120, fixed: true, sort: true}">小部件ID</th>
         <th lay-data="{field:'name', width:120, sort: true}">小部件名称</th>
         <th lay-data="{field:'routeName', width:120, sort: true}">小部件路由</th>
         <th lay-data="{field:'params', width:120, sort: true}">小部件参数</th>
@@ -29,7 +29,7 @@
                 layer.open({
                     type:2,
                     title:title+'--小部件演示',
-                    area:['600px','600px'],
+                    area:['600px','500px'],
                     shade:0,
                     maxmin:true,
                     offset:[150,600],

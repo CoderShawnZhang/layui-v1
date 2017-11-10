@@ -21,6 +21,20 @@ use backend\models\Widget;
 
 class WidgetsController extends BaseController
 {
+    const WIDGET_STATUS_DISABLE = 0;//禁用
+    const WIDGET_STATUS_NORMAL = 1;//启用
+    const WIDGET_STATUS_UNINSTALL = 2;//卸载
+
+    const WIDGET_STATUS_TXT_DISABLE = '禁用';
+    const WIDGET_STATUS_TXT_NORMAL = '启用';
+    const WIDGET_STATUS_TXT_UNINSTALL = '卸载';
+
+    public static $widgetStatus =[
+        self::WIDGET_STATUS_DISABLE=>['txt'=>self::WIDGET_STATUS_TXT_DISABLE,'color'=>'green'],
+        self::WIDGET_STATUS_NORMAL=>['txt'=>self::WIDGET_STATUS_TXT_NORMAL,'color'=>'green'],
+        self::WIDGET_STATUS_UNINSTALL=>['txt'=>self::WIDGET_STATUS_TXT_UNINSTALL,'color'=>'green'],
+        ];
+
     public function actionList(){
 
         return $this->render('list');
@@ -29,14 +43,21 @@ class WidgetsController extends BaseController
     public function actionWidgetList()
     {
         $widget = Widget::find()->asArray()->all();
-
+        foreach($widget as $key => $val){
+            $widget[$key]['status'] = $this->WidgetStatus($val['status']);
+        }
         return $this->tableDataHeader($widget);
+    }
+    private function WidgetStatus($status){
+        if(isset(self::$widgetStatus[$status]['color'])){
+            return '<span style="color:'.self::$widgetStatus[$status]['color'].'">'.self::$widgetStatus[$status]['txt'].'</span>';
+        }
+        return self::$widgetStatus[$status]['txt'];
     }
 
     public function actionWidgetShow(){
         $widgetID = \Yii::$app->request->get('widgetID');
         $widget = Widget::find()->where(['id'=>$widgetID])->asArray()->one();
-        $params = "['message'=>'我要生姑娘了！！！']";//条件以字符串传入
         return $this->render('widgetshow',['widgetName'=>$widget['routeName'],'widgetParams'=>$widget['params']]);
     }
 }
