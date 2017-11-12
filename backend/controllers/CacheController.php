@@ -52,7 +52,7 @@ class CacheController extends BaseController
      * 查看所有的键
      */
     public function actionShowredis(){
-var_dump(Yii::$app->redis->zsize('*'));die;
+
         $data = [];
         $page = Yii::$app->request->get();
         $cur_page = isset($page['page'])?$page['page']:1;
@@ -64,7 +64,7 @@ $i = 0;
 
             try {
                 if(Yii::$app->redis->hlen($val) > 0){
-var_dump($val);die;
+
                 }
                 if ( ! Yii::$app->redis->exists($val)) {
                     $str = uniqid(mt_rand(), 1);

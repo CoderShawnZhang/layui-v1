@@ -29,10 +29,10 @@
                 layer.open({
                     type:2,
                     title:title+'--小部件演示',
-                    area:['600px','500px'],
+                    area:['600px','500px'],//宽高
                     shade:0,
                     maxmin:true,
-                    offset:[150,600],
+                    offset:[150,400],
                     content:"/widgets/widget-show?widgetID="+id,
                     yes:function(){
                         $(that).click();

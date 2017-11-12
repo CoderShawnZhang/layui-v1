@@ -3,15 +3,15 @@ return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
         'cache' => [
-            'class' => 'yii\caching\FileCache',
-//            'class' => 'yii\redis\Cache',  //redis接管缓存
+//            'class' => 'yii\caching\FileCache',
+            'class' => 'yii\redis\Cache',
         ],
         'redis' => [
             'class' => 'yii\redis\Connection',
-            'hostname' => '192.168.200.101',
+            'hostname' => '127.0.0.1',
             'port' => 6379,
             'database' => 0,
-            'password' => 'anlewo2016',
+            'password' => "123456",
         ],
     ],
 ];

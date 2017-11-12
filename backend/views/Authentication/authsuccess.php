@@ -10,7 +10,7 @@
             <tr>
 <!--                <th lay-data="{checkbox:true, fixed: true}"></th>-->
                 <th lay-data="{field:'id', width:80, fixed: true, sort: true}">ID</th>
-                <th lay-data="{field:'username', width:120, sort: true, edit: 'text', templet: '#usernameTpl'}">用户名</th>
+                <th lay-data="{field:'name', width:120, sort: true, edit: 'text', templet: '#usernameTpl'}">用户名</th>
 <!--                <th lay-data="{field:'email', width:150}">密码</th>-->
                 <th lay-data="{field:'email', width:150}">邮箱</th>
                 <th lay-data="{field:'sex', width:150}">性别</th>

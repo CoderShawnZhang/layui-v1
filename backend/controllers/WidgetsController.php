@@ -66,10 +66,12 @@ class WidgetsController extends BaseController
      */
     public function actionWidgetList()
     {
+
         $widget = Widget::find()->asArray()->all();
         foreach($widget as $key => $val){
             $widget[$key]['status'] = $this->WidgetStatus($val['status']);
         }
+
         return $this->tableDataHeader($widget);
     }
 

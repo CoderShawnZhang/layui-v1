@@ -45,13 +45,6 @@ return [
             'rules' => [
             ],
         ],
-        'redis' => [
-            'class' => 'yii\redis\Connection',
-            'hostname' => '192.168.200.101',
-            'port' => 6379,
-            'database' => 0,
-            'password' => 'anlewo2016',
-        ],
 
     ],
     'params' => $params,

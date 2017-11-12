@@ -23,20 +23,34 @@
         </dl>
     </li>
     <li class="layui-nav-item">
-        <a href="javascript:;"><i class="layui-icon"></i><cite>应用结构（Application Structure）</cite></a>
+        <a href="javascript:;"><i class="layui-icon"></i><cite>应用结构</cite></a>
         <dl class="layui-nav-child">
             <dd><a href="javascript:;" data-id="12"><i class="layui-icon">&#x1006;</i><cite>数据缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="13"><i class="layui-icon">&#x1007;</i><cite>片段缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="14"><i class="layui-icon">&#xe629;</i><cite>分页缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>HTTP缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="16"><i class="layui-icon">&#xe617;</i><cite>数据缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="17"><i class="layui-icon">&#xe606;</i><cite>片段缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="18"><i class="layui-icon">&#xe609;</i><cite>分页缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="19"><i class="layui-icon">&#xe60a;</i><cite>HTTP缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="20"><i class="layui-icon">&#xe62c;</i><cite>数据缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="21"><i class="layui-icon">&#x1005;</i><cite>片段缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="22"><i class="layui-icon">&#xe61b;</i><cite>分页缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="23"><i class="layui-icon">&#xe610;</i><cite>HTTP缓存</cite></a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;"><i class="layui-icon"></i><cite>接受用户数据</cite></a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;" data-url="/getingdata/index" data-id="12"><i class="layui-icon">&#x1006;</i><cite>创建表单</cite></a></dd>
+            <dd><a href="javascript:;" data-id="13"><i class="layui-icon">&#x1007;</i><cite>输入验证</cite></a></dd>
+            <dd><a href="javascript:;" data-id="14"><i class="layui-icon">&#xe629;</i><cite>文件上传</cite></a></dd>
+            <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>收集列表输入</cite></a></dd>
+            <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>多么模型同时输入</cite></a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;"><i class="layui-icon"></i><cite>显示数据</cite></a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;" data-id="12"><i class="layui-icon">&#x1006;</i><cite>格式化输出数据</cite></a></dd>
+            <dd><a href="javascript:;" data-id="13"><i class="layui-icon">&#x1007;</i><cite>分页</cite></a></dd>
+            <dd><a href="javascript:;" data-id="14"><i class="layui-icon">&#xe629;</i><cite>排序</cite></a></dd>
+            <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>数据提供器</cite></a></dd>
+            <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>数据小部件</cite></a></dd>
+            <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>操作客户端脚本</cite></a></dd>
+            <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>主题</cite></a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">

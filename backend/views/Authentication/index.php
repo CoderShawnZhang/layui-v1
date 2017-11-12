@@ -1,3 +1,4 @@
+
 <fieldset class="layui-elem-field site-demo-button" style="margin: 30px;width: 500px;">
     <legend>认证（Authentication）</legend>
     <form class="layui-form" method="post" action="/authentication/login">
@@ -5,7 +6,7 @@
             <div class="layui-inline">
                 <label class="layui-form-label">认证名：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="name" lay-verify="required" autocomplete="off" class="layui-input" value="admin">
+                    <input type="text" name="mobile" lay-verify="required" autocomplete="off" class="layui-input" value="admin">
                 </div>
                 <div class="layui-form-mid layui-word-aux">认证名是，手机号或邮箱</div>
             </div>

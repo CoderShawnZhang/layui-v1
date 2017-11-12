@@ -9,10 +9,17 @@
 namespace backend\controllers;
 
 use backend\YiiFramework2\Security\Authentication\Authentication;
+
+
 use Yii;
 class AuthenticationController extends BaseController
 {
     public function actionIndex(){
+
+
+        Yii::$app->redis->set('t','123123123');
+        $t = Yii::$app->redis->get('t');
+        var_dump($t);die;
         return $this->render('index');
     }
 
@@ -76,7 +83,7 @@ class AuthenticationController extends BaseController
      * @return array
      */
     private function validateRequestData($post){
-        $username = isset($post['name']) ? $post['name'] : '';
+        $username = isset($post['mobile']) ? $post['mobile'] : '';
         $password = isset($post['password']) ? $post['password'] : '';
         if(empty($password)){
             return ['success' => false,'msg' => '密码不能为空！'];

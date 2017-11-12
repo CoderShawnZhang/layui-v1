@@ -12,7 +12,7 @@ class Authentication
 {
     public static function Login($loginData){
 //        $identity = User::findOne(['name' => $loginData['name'],'password'=>$loginData['password'],'status' => UserTable::USER_STATE_NOMAL]);
-        $identity = User::findOne(['name' => $loginData['name'],'password'=>$loginData['password'],'status' => 0]);
+        $identity = User::findOne(['mobile' => $loginData['mobile'],'password'=>$loginData['password'],'status' => 0]);
         if(!empty($identity)){
             Yii::$app->user->login($identity);
             return true;
