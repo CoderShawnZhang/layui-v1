@@ -66,10 +66,26 @@ class WidgetsController extends BaseController
      */
     public function actionWidgetList()
     {
+        if(isset($this->redis)){
+            $widgetRedis = $this->redis->EXISTS('widget');
+            if(!$widgetRedis){
+                sleep(6);
+                $widget = Widget::find()->asArray()->all();
+                foreach($widget as $key => $val){
+                    $widget[$key]['status'] = $this->WidgetStatus($val['status']);
+                }
+                $this->redis->set('widget',json_encode($widget));
 
-        $widget = Widget::find()->asArray()->all();
-        foreach($widget as $key => $val){
-            $widget[$key]['status'] = $this->WidgetStatus($val['status']);
+            }else{
+                $widget = $this->redis->get('widget');
+                $widget = json_decode($widget, true);
+            }
+        }else{
+            sleep(6);
+            $widget = Widget::find()->asArray()->all();
+            foreach($widget as $key => $val){
+                $widget[$key]['status'] = $this->WidgetStatus($val['status']);
+            }
         }
 
         return $this->tableDataHeader($widget);

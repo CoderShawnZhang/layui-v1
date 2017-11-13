@@ -15,11 +15,6 @@ use Yii;
 class AuthenticationController extends BaseController
 {
     public function actionIndex(){
-
-
-        Yii::$app->redis->set('t','123123123');
-        $t = Yii::$app->redis->get('t');
-        var_dump($t);die;
         return $this->render('index');
     }
 

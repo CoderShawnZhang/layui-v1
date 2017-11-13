@@ -8,10 +8,10 @@ return [
         ],
         'redis' => [
             'class' => 'yii\redis\Connection',
-            'hostname' => '127.0.0.1',
+            'hostname' => '192.168.200.101',
             'port' => 6379,
-            'database' => 0,
-            'password' => "123456",
+            'database' => 1,
+            'password' => 'anlewo2016',
         ],
     ],
 ];

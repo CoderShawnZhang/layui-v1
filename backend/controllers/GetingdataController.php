@@ -18,6 +18,19 @@ class GetingdataController extends BaseController
 
     public function actionPostform(){
         $post = \Yii::$app->request->post();
-        var_dump($post);die;
+//        unset($post['_csrf']);
+
+        $loginform = new LoginForm();
+
+        if(!$loginform->load($post))
+        {
+            var_dump($loginform->getErrors());die;
+        }
+
+        if($loginform->validate()){
+            var_dump('ok');
+        }else{
+            var_dump($loginform->getErrors());
+        }
     }
 }
