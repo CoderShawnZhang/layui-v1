@@ -7,6 +7,7 @@ namespace backend\controllers;
 
 
 use app\models\Image;
+use app\models\Setting;
 use backend\models\GetingData\LoginForm;
 use backend\models\GetingData\UploadForm;
 use backend\models\GetingData\UploadsForm;
@@ -89,15 +90,14 @@ class GetingdataController extends BaseController
         $model = new UploadsForm();
         if(Yii::$app->request->isPost){
             $model->imageFiles = UploadedFile::getInstances($model, 'imageFiles');
-
             if ($model->uploads()) {
                 // 文件上传成功
-                $res = true;
+                $res = '上传成功！';
                 $this->saveImageToDb($model);
+                return $res;
             }else{
-                $res = false;
+                return '上传失败！';
             }
-            return $res;
         }
     }
 
@@ -110,5 +110,13 @@ class GetingdataController extends BaseController
         $image->src = Yii::$app->params['uploadPath'].$name;
         $image->status = 0;
         $image->save(false);
+    }
+
+    /**
+     * 收集列表输入
+     */
+    public function actionSetting(){
+        $setting = Setting::find()->asArray()->all();
+        return $this->render('setting',['model'=>$setting]);
     }
 }
