@@ -1,6 +1,6 @@
 <!--css控制默认第一个为初始显示导航-->
 <ul class="layui-nav layui-nav-tree left-menu0"  lay-filter="test">
-    <li class="layui-nav-item layui-nav-itemed">
+    <li class="layui-nav-item ">
         <a class="" href="javascript:;"><i class="layui-icon"></i>安全（Security）</cite></a>
         <dl class="layui-nav-child">
             <dd><a href="javascript:;" data-url="/authentication/index" data-id="1"><i class="layui-icon">&#xe651;</i><cite>认证</cite></a></dd>
@@ -34,9 +34,9 @@
     <li class="layui-nav-item">
         <a href="javascript:;"><i class="layui-icon"></i><cite>接受用户数据</cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;" data-url="/getingdata/index" data-id="12"><i class="layui-icon">&#x1006;</i><cite>创建表单</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/getingdata/upload-index" data-id="12"><i class="layui-icon">&#x1006;</i><cite>创建表单</cite></a></dd>
             <dd><a href="javascript:;" data-id="13"><i class="layui-icon">&#x1007;</i><cite>输入验证</cite></a></dd>
-            <dd><a href="javascript:;" data-id="14"><i class="layui-icon">&#xe629;</i><cite>文件上传</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/getingdata/upload-index" data-id="14"><i class="layui-icon">&#xe629;</i><cite>文件上传</cite></a></dd>
             <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>收集列表输入</cite></a></dd>
             <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>多么模型同时输入</cite></a></dd>
         </dl>

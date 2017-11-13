@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
                 </div>
                 <div class="layui-form-mid layui-word-aux">{error}</div>
             </div>
-        </div>'])->textInput(['name'=>'searchConfig','lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
+        </div>'])->textInput(['lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
 
     <?= $form->field($model, 'name', ['template'=>'<div class="layui-form-item">
             <div class="layui-inline">
@@ -39,7 +39,7 @@ use yii\widgets\ActiveForm;
                 </div>
                 <div class="layui-form-mid layui-word-aux">{error}</div>
             </div>
-        </div>'])->textInput(['name'=>'name','lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
+        </div>'])->textInput(['lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
     <?= $form->field($model, 'mobile', ['template'=>'<div class="layui-form-item">
             <div class="layui-inline">
                 <label class="layui-form-label">{label}：</label>
@@ -48,7 +48,7 @@ use yii\widgets\ActiveForm;
                 </div>
                 <div class="layui-form-mid layui-word-aux">{error}</div>
             </div>
-        </div>'])->textInput(['name'=>'mobile','lay-verify'=>'name','autocomplete'=>'off','class'=>'layui-input']) ?>
+        </div>'])->textInput(['lay-verify'=>'name','autocomplete'=>'off','class'=>'layui-input']) ?>
 
     <?= $form->field($model, 'password',['template'=>'<div class="layui-form-item">
             <div class="layui-inline">
@@ -58,7 +58,7 @@ use yii\widgets\ActiveForm;
                 </div>
                 <div class="layui-form-mid layui-word-aux">{error}</div>
             </div>
-        </div>'])->passwordInput(['name'=>'password','lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
+        </div>'])->passwordInput(['lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
 
     <?= $form->field($model, 'email',['template'=>'<div class="layui-form-item">
             <div class="layui-inline">

@@ -6,13 +6,17 @@
 namespace backend\controllers;
 
 
+use app\models\Image;
 use backend\models\GetingData\LoginForm;
-use backend\models\UserModel;
+use backend\models\GetingData\UploadForm;
+use backend\models\GetingData\UploadsForm;
+use phpDocumentor\Reflection\DocBlock\Tags\Var_;
+use Yii;
+use yii\web\UploadedFile;
 
 class GetingdataController extends BaseController
 {
     public function actionIndex(){
-//        var_dump(123);die;
         $LoginForm = new LoginForm();
         return $this->render('index',['model'=>$LoginForm]);
     }
@@ -21,24 +25,90 @@ class GetingdataController extends BaseController
         $post = \Yii::$app->request->post();
         unset($post['_csrf']);
         $loginform = new LoginForm();
-        $reflector = new \ReflectionClass($loginform);
-        $formArr = $reflector->getShortName();
-        $arr[$formArr] = [];
-        foreach ($post as $k=>$v){
-            if($k=='_csrf'){
-                continue;
-            }
-            $arr[$formArr][$k] = $v;
-        }
+
+//        $reflector = new \ReflectionClass($loginform);
+//        $formArr = $reflector->getShortName();
+//        $arr[$formArr] = [];
+//        foreach ($post as $k=>$v){
+//            if($k=='_csrf'){
+//                continue;
+//            }
+//            $arr[$formArr][$k] = $v;
+//        }
         //注意，如果自己重组了模型生成表单的name值，load的时候是有问题的，因为它会以数组方式数组是以模型名定义的。然后load这个模型数组
-        if(!$loginform->load($arr))
+        if(!$loginform->load($post))
         {
-            var_dump($loginform->getErrors());die;
+            var_dump('load数据失败！');die;
         }
 
         if(!$loginform->validate()){
             var_dump($loginform->getErrors());
         }
-        var_dump(222);die;
+        var_dump('ok');die;
+    }
+
+    /**
+     * 渲染上传页面
+     * @return string
+     */
+    public function actionUploadIndex(){
+        $model = new UploadForm();
+        $models = new UploadsForm();
+        return $this->render('UploadIndex',['model'=>$model,'models'=>$models]);
+    }
+    public function actionImageList(){
+        $imageList = UploadForm::find()->where(['status'=>Image::IMAGE_STATUS_YES])->asArray()->all();
+        foreach($imageList as $key=>$val){
+            $imageList[$key]['src'] = '<img src='.$val['src'].' style="width:100px;height:100px;"/>';
+        }
+        return $this->tableDataHeader($imageList);
+    }
+    /**
+     * 上传到服务器(上传单张)
+     * layui框架，上传多张是通过多次请求单张实现的多图片上传
+     */
+    public function actionUpload(){
+        $model = new UploadForm();
+        if (Yii::$app->request->isPost) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            if ($model->upload()) {
+                // 文件上传成功
+                $res = ['code'=>0];
+                $this->saveImageToDb($model);
+            }else{
+                $res = ['code'=>1];
+            }
+            return json_encode($res);
+        }
+    }
+
+    /**
+     * YII2上传多图片，整合layui前端样式
+     */
+    public function actionUploads(){
+        $model = new UploadsForm();
+        if(Yii::$app->request->isPost){
+            $model->imageFiles = UploadedFile::getInstances($model, 'imageFiles');
+
+            if ($model->uploads()) {
+                // 文件上传成功
+                $res = true;
+                $this->saveImageToDb($model);
+            }else{
+                $res = false;
+            }
+            return $res;
+        }
+    }
+
+    private function saveImageToDb($model){
+        $name = $model->imageFile->name;
+        $size = $model->imageFile->size;
+        $image = new Image();
+        $image->name = $name;
+        $image->size = $size;
+        $image->src = Yii::$app->params['uploadPath'].$name;
+        $image->status = 0;
+        $image->save(false);
     }
 }
