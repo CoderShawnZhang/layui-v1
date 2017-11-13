@@ -36,8 +36,8 @@ use yii\widgets\ActiveForm;
 
 <?php $form = ActiveForm::begin(['action'=>'/getingdata/uploads','options' => ['enctype' => 'multipart/form-data']]) ?>
 <?= $form->field($models, 'imageFiles[]')->fileInput(['multiple' => true, 'accept' => 'image/*','style'=>'display:none;','id'=>'uploadimages'])->label('') ?>
-    <button type="button" class="layui-btn" id="test4">选择图片</button>
-    <button type="submit" class="layui-btn" id="test2">多图片上传</button>
+    <button type="button" class="layui-btn layui-btn-normal" id="test4">选择图片</button>
+    <button type="submit" class="layui-btn layui-btn-warm" id="test2">确认上传</button>
 <?php ActiveForm::end() ?>
 
 <script>
