@@ -20,6 +20,16 @@ use yii\widgets\ActiveForm;
         'options' => ['class' => 'form-horizontal layui-form'],
     ])
     ?>
+    <input type="text" name="mobile" style="display:none">
+    <?= $form->field($model, 'searchConfig', ['template'=>'<div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">{label}：</label>
+                <div class="layui-input-inline">
+                    {input}
+                </div>
+                <div class="layui-form-mid layui-word-aux">{error}</div>
+            </div>
+        </div>'])->textInput(['name'=>'searchConfig','lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
 
     <?= $form->field($model, 'name', ['template'=>'<div class="layui-form-item">
             <div class="layui-inline">
@@ -29,7 +39,16 @@ use yii\widgets\ActiveForm;
                 </div>
                 <div class="layui-form-mid layui-word-aux">{error}</div>
             </div>
-        </div>'])->textInput(['name'=>'name','lay-verify'=>'name','autocomplete'=>'off','class'=>'layui-input']) ?>
+        </div>'])->textInput(['name'=>'name','lay-verify'=>'required','autocomplete'=>'off','class'=>'layui-input']) ?>
+    <?= $form->field($model, 'mobile', ['template'=>'<div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">{label}：</label>
+                <div class="layui-input-inline">
+                    {input}
+                </div>
+                <div class="layui-form-mid layui-word-aux">{error}</div>
+            </div>
+        </div>'])->textInput(['name'=>'mobile','lay-verify'=>'name','autocomplete'=>'off','class'=>'layui-input']) ?>
 
     <?= $form->field($model, 'password',['template'=>'<div class="layui-form-item">
             <div class="layui-inline">
@@ -45,9 +64,9 @@ use yii\widgets\ActiveForm;
             <div class="layui-inline">
                 <label class="layui-form-label">{label}：</label>
                 <div class="layui-input-inline">
-                    <input type="email" name="email" lay-verify="email" autocomplete="off" class="layui-input" value="44444@126.com">
+                    <input type="email" name="email" lay-verify="email" autocomplete="off" class="layui-input" value="">
                 </div>
-                <div class="layui-form-mid layui-word-aux">{label}</div>
+                <div class="layui-form-mid layui-word-aux">{error}</div>
             </div>
         </div>'])->input('email') ?>
 
@@ -69,8 +88,8 @@ use yii\widgets\ActiveForm;
         //自定义验证规则
         form.verify({
             name: function(value){
-                if(value.length < 5){
-                    return '标题至少得5个字符啊';
+                if(value.length !=11){
+                    return '用户名只能填写11位手机号';
                 }
             }
             ,pass: [/(.+){6,12}$/, '密码必须6到12位']
@@ -84,7 +103,7 @@ use yii\widgets\ActiveForm;
             layer.alert(JSON.stringify(data.field), {
                 title: '最终的提交信息'
             })
-            return false;
+//            return false;
         });
     });
 </script>

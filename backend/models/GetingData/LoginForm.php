@@ -23,12 +23,12 @@ class LoginForm extends ActiveRecord
     public function rules()
     {
         return [
-            ['name','string','max'=>6],
-            ['password','string','max'=>5],
+            ['name','string'],
+            ['password','string'],
             [['name','password'],'required','message'=>'必填项'],
-            ['mobile','string','max'=>5],
-            ['email','string','max'=>15],
-            ['searchConfig','string','max'=>15],
+            ['mobile','string'],
+            ['email','string'],
+            ['searchConfig','string'],
         ];
     }
 
