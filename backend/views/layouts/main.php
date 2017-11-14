@@ -30,7 +30,7 @@ echo "<script>var str='$assetPath';</script>";
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body style="padding: 0;width: 100%;margin: 0;overflow-x: hidden;">
 <?php $this->beginBody() ?>
     <div class="layui-layout layui-layout-admin">
         <?= $content ?>

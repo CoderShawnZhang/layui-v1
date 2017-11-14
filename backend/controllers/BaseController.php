@@ -8,7 +8,7 @@
 
 namespace backend\controllers;
 
-use yii\base\Controller;
+use yii\web\Controller;
 
 class BaseController extends Controller
 {

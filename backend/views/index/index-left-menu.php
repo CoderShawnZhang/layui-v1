@@ -100,7 +100,7 @@
     </li>
 </ul>
 <ul class="layui-nav layui-nav-tree left-menu1" lay-filter="test">
-    <li class="layui-nav-item layui-nav-itemed">
+    <li class="layui-nav-item">
         <a href="javascript:;">菜单管理</a>
         <dl class="layui-nav-child">
             <dd>
@@ -114,13 +114,27 @@
             </dd>
         </dl>
     </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">数据库管理</a>
+        <dl class="layui-nav-child">
+            <dd>
+                <a href="javascript:;" data-url="/database/index" data-id="37">数据表</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="/database/index" data-id="38">数据优化</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="/database/index" data-id="38">数据库配置</a>
+            </dd>
+        </dl>
+    </li>
 </ul>
 <ul class="layui-nav layui-nav-tree left-menu2" lay-filter="test">
     <li class="layui-nav-item">
-        <a href="javascript:;">后台用户3</a>
+        <a href="javascript:;">数据管理</a>
         <dl class="layui-nav-child">
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="39">登录日志</a>
+                <a href="javascript:;" data-url="/database/index" data-id="39">数据库</a>
             </dd>
             <dd>
                 <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="40">操作日志</a>

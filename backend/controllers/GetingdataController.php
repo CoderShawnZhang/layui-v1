@@ -11,12 +11,14 @@ use app\models\Setting;
 use backend\models\GetingData\LoginForm;
 use backend\models\GetingData\UploadForm;
 use backend\models\GetingData\UploadsForm;
-use phpDocumentor\Reflection\DocBlock\Tags\Var_;
+
 use Yii;
+use yii\base\Model;
 use yii\web\UploadedFile;
 
 class GetingdataController extends BaseController
 {
+    public $enableCsrfValidation = false;
     public function actionIndex(){
         $LoginForm = new LoginForm();
         return $this->render('index',['model'=>$LoginForm]);
@@ -113,10 +115,47 @@ class GetingdataController extends BaseController
     }
 
     /**
-     * 收集列表输入
+     * 收集列表输入（配置）
      */
     public function actionSetting(){
         $setting = Setting::find()->asArray()->all();
         return $this->render('setting',['model'=>$setting]);
+    }
+
+    /**
+     * 多模型更新设置
+     *
+     * @return string
+     */
+    public function actionSettingUpdate(){
+        return true;
+        $setting = Setting::find()->indexBy('name')->all();
+        if (Model::loadMultiple($setting,Yii::$app->request->post()) && Model::validateMultiple($setting)) {
+            foreach($setting as $set){
+                $set->save(false);
+            }
+            return 123;
+        }
+//        return $this->render('setting', ['model' => $setting]);
+    }
+    /**
+     * 新增配置
+     */
+    public function actionAdd(){
+        if(Yii::$app->request->isPost){
+            $post = Yii::$app->request->post();
+            $set = new Setting();
+            $set->name = isset($post['name'])?$post['name']:'';
+            $set->value = isset($post['value'])?$post['value']:'';
+            $set->title = isset($post['title'])?$post['title']:'';
+            $set->save();
+            return $this->render('setting');
+        }
+        return $this->render('add');
+    }
+
+    public function actionTime()
+    {
+        return date("h:i:s");
     }
 }

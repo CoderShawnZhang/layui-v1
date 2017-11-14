@@ -30,6 +30,7 @@ class Setting extends BaseModel
             [['name'], 'required'],
             [['name'], 'string', 'max' => 20],
             [['value'], 'string', 'max' => 50],
+            [['title'], 'string', 'max' => 20],
         ];
     }
 
@@ -41,6 +42,7 @@ class Setting extends BaseModel
         return [
             'name' => Yii::t('app', 'Name'),
             'value' => Yii::t('app', 'Value'),
+            'title' => Yii::t('app', 'Title'),
         ];
     }
 }
