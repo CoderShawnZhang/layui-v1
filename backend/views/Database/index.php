@@ -1,34 +1,23 @@
+
 <fieldset class="layui-elem-field site-demo-button" style="width: 100%;">
     <legend>菜单操作</legend>
-    <div style="margin: 15px;" id="DataBasePopWin">
+    <div style="margin: 15px;" id="layerDemo">
         <div class="layui-input-inline">
             <input type="tel" name="phone" lay-verify="phone" autocomplete="off" class="layui-input" placeholder="查询配置">
         </div>
         <button class="layui-btn layui-btn-warm">查询</button>
-        <?php
-            use yii\widgets\Pjax;
-            use yii\helpers\Html;
-            use yii\widgets\ActiveForm;
-        ?>
-
-
-        <?php Pjax::begin(['id'=>'phoneDetail']); ?>
-            <?php $form = ActiveForm::begin(
-                [
-                    'action'=>'/database/back',
-                    'id'=>'queryPhone',
-                    'method'=>'post',
-                    'options'=>['data-pjax'=>'#phoneDetail']
-                ]
-            ) ?>
-             <button class="layui-btn" layui-method="back">备份</button>
-            <?php ActiveForm::end() ?>
-        <?php Pjax::end(); ?>
-
-        <button class="layui-btn layui-btn-danger" data-method="export">导入</button>
+        <div style="float:right;margin-left: 10px;margin-right: 20px;">
+            <button class="layui-btn" data-method="back" data-type="t">备份</button>
+        </div>
+        <div style="float:right;margin-left: 10px;">
+            <button class="layui-btn layui-btn-normal" data-method="back" data-type="t">导入sql</button>
+        </div>
     </div>
 </fieldset>
-<table class="layui-table" lay-data="{height:'400', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/database/table-list') ;?>', id:'datatable'}" lay-filter="datatable">
+
+
+
+<table class="layui-table" lay-data="{height:'400', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/database/table-list') ;?>', id:'datatable',loading:true}" lay-filter="datatable">
     <thead>
     <tr>
         <th lay-data="{checkbox:true, fixed: true}"></th>
@@ -60,39 +49,39 @@
     <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
     <a class="layui-btn layui-btn-small layui-btn-mini" lay-event="detail">查看</a>
 </div>
+    <button class="layui-btn" data-method="back" data-type="t">备份</button>
 <script>
-    layui.use(['table','layer','jquery'],function(){
+    layui.use(['table','layer'],function(){
         var table = layui.table,
             $ = layui.jquery,
             layer = layui.layer;
+        table.render({ //其它参数在此省略
+            loading: true
+        });
         var active = {
-            export: function () {
-                var that = this;
-                //多窗口模式，层叠置顶
-                layer.open({
-                    type: 2 //此处以iframe举例
-                    , title: '当你选择该窗体时，即会在最顶端'
-                    , area:['600px','500px']  //宽高
-                    , shade: 0
-                    , maxmin: true
-                    , offset:[150,400]
-                    , content: 'http://layer.layui.com/test/settop.html'
-                    , btn: ['继续弹出', '全部关闭'] //只是为了演示
-                    , yes: function () {
-                        $(that).click();
-                    }
-                    , btn2: function () {
-                        layer.closeAll();
-                    }
-
-                    , zIndex: layer.zIndex //重点1
-                    , success: function (layero) {
-                        layer.setTop(layero); //重点2
-                    }
+            back:function(othis){
+                var type = othis.data('type')
+                    ,action = othis.data('method')
+                    ,text = othis.text();
+                $.get('/database/'+action,function(data){
+                    layer.open({
+                        type: 1
+                        ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+                        ,id: 'layerDemo'+type //防止重复弹出
+                        ,content: data
+                        ,btn: '确定'
+                        ,btnAlign: 'c' //按钮居中
+                        ,shade: 0 //不显示遮罩
+                        ,yes: function(){
+                            layer.closeAll();
+                        }
+                    });
                 });
+
             }
         };
-        $('#DataBasePopWin .layui-btn').on('click', function(){
+
+        $('#layerDemo .layui-btn').on('click', function(){
             var othis = $(this), method = othis.data('method');
             active[method] ? active[method].call(this, othis) : '';
         });

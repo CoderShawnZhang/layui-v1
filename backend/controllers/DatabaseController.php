@@ -19,8 +19,6 @@ class DatabaseController extends BaseController
 
     public function actionTableList(){
         $tableList = \Yii::$app->db->createCommand('show table status from alw_order')->queryAll();
-
-
         return $this->tableDataHeader($tableList);
     }
     /**
@@ -34,9 +32,13 @@ class DatabaseController extends BaseController
             $tableSql .= $table['Create Table'].";\n\n";
         }
         $tableSql .= "COMMIT;SET FOREIGN_KEY_CHECKS = 1;\n\n";
-        file_put_contents("../DataSql/".time().".sql", Html::encode($tableSql));
-
-        return $this->renderAjax('index');
+        $putres = file_put_contents("../DataSql/".time().".sql", Html::encode($tableSql));
+        sleep(4);
+        $resultTxt = '备份成功！';
+        if(!$putres){
+            $resultTxt = '备份失败！';
+        }
+        return $this->renderAjax('back',['result'=>$resultTxt]);
     }
 
     /**
