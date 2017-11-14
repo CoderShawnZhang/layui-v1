@@ -118,13 +118,13 @@
         <a href="javascript:;">数据库管理</a>
         <dl class="layui-nav-child">
             <dd>
-                <a href="javascript:;" data-url="/database/index" data-id="37">数据表</a>
+                <a href="javascript:;" data-url="/database/index" data-id="39">数据表</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="/database/index" data-id="38">数据优化</a>
+                <a href="javascript:;" data-url="/database/index" data-id="40">数据优化</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="/database/index" data-id="38">数据库配置</a>
+                <a href="javascript:;" data-url="/database/index" data-id="41">数据库配置</a>
             </dd>
         </dl>
     </li>
