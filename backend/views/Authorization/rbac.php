@@ -12,6 +12,7 @@
         <li lay-id="4">将权限赋给角色</li>
         <li lay-id="5">将角色赋给用户</li>
         <li lay-id="6">验证权限</li>
+        <li lay-id="7">ACF</li>
     </ul>
     <div class="layui-tab-content" style="height:auto;">
         <div class="layui-tab-item layui-show">
@@ -164,6 +165,20 @@
                 </li>
             </ul>
         </div><!--验证权限-->
+        <div class="layui-tab-item">
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                <legend>ACF</legend>
+            </fieldset>
+            <ul class="layui-timeline">
+                <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis"></i>
+                    <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">5、自定义ACF验证规则</h3>
+                        。。。。
+                    </div>
+                </li>
+            </ul>
+        </div><!--ACF-->
     </div>
 </div>
 

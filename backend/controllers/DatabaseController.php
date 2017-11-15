@@ -6,10 +6,13 @@
 namespace backend\controllers;
 
 
+use backend\YiiFramework2\Database\Export\ExportDataTable;
 use yii\helpers\Html;
+use Yii;
 
 class DatabaseController extends BaseController
 {
+    public $enableCsrfValidation = false;
     /**
      * 列出数据库所有数据表
      */
@@ -25,11 +28,18 @@ class DatabaseController extends BaseController
      * 备份整个数据库
      */
     public function actionBack(){
+
+
         $tableList = \Yii::$app->db->createCommand('show table status from alw_order')->queryAll();
+
         $tableSql = "\n\nSET NAMES utf8mb4;\nSET FOREIGN_KEY_CHECKS = 0;\nDROP TABLE IF EXISTS `user`;\n\n";
         foreach($tableList as $key => $val){
             $table = \Yii::$app->db->createCommand('SHOW CREATE TABLE '.$val['Name'])->queryOne();
             $tableSql .= $table['Create Table'].";\n\n";
+            $export = new ExportDataTable();
+            if(!$export->_insert_record($val['Name'])){
+                continue;
+            }
         }
         $tableSql .= "COMMIT;SET FOREIGN_KEY_CHECKS = 1;\n\n";
         $putres = file_put_contents("../DataSql/".time().".sql", Html::encode($tableSql));
@@ -74,5 +84,13 @@ class DatabaseController extends BaseController
      */
     public function actionImportTable(){
 
+    }
+
+    /**
+     * 数据表-数据
+     */
+    public function actionData(){
+
+        return $this->render('data');
     }
 }

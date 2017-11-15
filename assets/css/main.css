@@ -89,7 +89,7 @@ iframe{
     padding-bottom: 200px;
 }
 /*重写表单复选框上边距距离样式*/
-.laytable-cell-checkbox{
+.layui-form-checkbox[lay-skin=primary]{
     top:5px;
     padding-top: 1px;
 }

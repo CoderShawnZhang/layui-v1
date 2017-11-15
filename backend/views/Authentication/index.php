@@ -2,6 +2,7 @@
 <fieldset class="layui-elem-field site-demo-button" style="margin: 30px;width: 500px;">
     <legend>认证（Authentication）</legend>
     <form class="layui-form" method="post" action="/authentication/login">
+        {{__csrd}}
         <div class="layui-form-item">
             <div class="layui-inline">
                 <label class="layui-form-label">认证名：</label>
