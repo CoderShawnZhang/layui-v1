@@ -18,7 +18,10 @@
         "yiisoft/yii2": "~2.0.6",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
-        "yiisoft/yii2-redis": "*"
+        "yiisoft/yii2-redis": "*",
+        "laravelurl/urlscannertest": "dev-master",
+        "layuiyii/progress": "dev-master",
+        "layuiyii/hello": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
@@ -37,10 +40,16 @@
             }
         }
     },
-    "repositories": {
-        "packagist": {
+    "config": {
+        "secure-http": false
+    },
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
+        },
+        {
+            "packagist": false
         }
-    }
+    ]
 }
