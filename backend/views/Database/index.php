@@ -95,21 +95,26 @@ layui.use(['table','layer','element'],function(){
                         }
                     });
                 active.loading(othis);
-                    return false;
-                $.get('/database/'+action,function(data){
-                    layer.open({
-                        type: 1
-                        ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
-                        ,id: 'layerDemo'+type //防止重复弹出
-                        ,content: data
-                        ,btn: '确定'
-                        ,btnAlign: 'c' //按钮居中
-                        ,shade: 0 //不显示遮罩
-                        ,yes: function(){
-                            layer.closeAll();
-                        }
-                    });
+                $.ajax({
+                    type : "POST",  //提交方式
+                    url : '/database/'+action,//路径
+                    data : {},//数据，这里使用的是Json格式进行传输
+                    success : function(data) {//返回数据根据结果进行相应的处理
+                        layer.open({
+                            type: 1
+                            ,offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+                            ,id: 'layerDemo'+type //防止重复弹出
+                            ,content: data
+                            ,btn: '确定'
+                            ,btnAlign: 'c' //按钮居中
+                            ,shade: 0 //不显示遮罩
+                            ,yes: function(){
+                                layer.closeAll();
+                            }
+                        });
+                    }
                 });
+
 
             },
             export:function(othis){
@@ -130,24 +135,35 @@ layui.use(['table','layer','element'],function(){
 
             },
             loading: function(othis){
-                alert(12312312);
+
                 var DISABLED = 'layui-btn-disabled';
                 if(othis.hasClass(DISABLED)) return;
                 //模拟loading
                 var n = 0, timer = setInterval(function(){
-                    n = n + Math.random()*10|0;
-                    if(n>100){
-                        n = 100;
-                        clearInterval(timer);
-                        othis.removeClass(DISABLED);
-                    }
-                    element.progress('demo', n+'%');
-                    if(n==100){
-                        alert("备份完成！");
-                    }
-                }, 300+Math.random()*1000);
 
+                    $.get('/database/jisuan',function(n){
+                        if(n>100){
+                            n = 100;
+                            clearInterval(timer);
+                            othis.removeClass(DISABLED);
+                        }
+                        element.progress('demo', n+'%');
+                        if(n==100){
+                            alert("备份完成！");
+                        }
+                    });
+//                    n = n + Math.random()*10|0;
+//                    if(n>100){
+//                        n = 100;
+//                        clearInterval(timer);
+//                        othis.removeClass(DISABLED);
+//                    }
+//                    element.progress('demo', n+'%');
+                }, 300+Math.random()*1000);
                 othis.addClass(DISABLED);
+                if(n==100){
+                    alert("备份完成！");
+                }
             }
         };
         $('#layerDemo .layui-btn').on('click', function(){

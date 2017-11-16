@@ -9,9 +9,11 @@ namespace backend\controllers;
 use backend\YiiFramework2\Database\Export\ExportDataTable;
 use yii\helpers\Html;
 use Yii;
-
+global $process;
 class DatabaseController extends BaseController
 {
+
+
     public $enableCsrfValidation = false;
     /**
      * 列出数据库所有数据表
@@ -24,6 +26,7 @@ class DatabaseController extends BaseController
         $tableList = \Yii::$app->db->createCommand('show table status from alw_order')->queryAll();
         return $this->tableDataHeader($tableList);
     }
+
     /**
      * 备份整个数据库
      */
@@ -40,7 +43,10 @@ class DatabaseController extends BaseController
             if(!$export->_insert_record($val['Name'])){
                 continue;
             }
+            Yii::$app->params['backProcess'] =  Yii::$app->params['backProcess'] + 10;
         }
+
+
         $tableSql .= "COMMIT;SET FOREIGN_KEY_CHECKS = 1;\n\n";
         $putres = file_put_contents("../DataSql/".time().".sql", Html::encode($tableSql));
         sleep(4);
@@ -49,6 +55,10 @@ class DatabaseController extends BaseController
             $resultTxt = '备份失败！';
         }
         return $this->renderAjax('back',['result'=>$resultTxt]);
+    }
+
+    public function actionJisuan(){
+        echo 12;
     }
 
     /**

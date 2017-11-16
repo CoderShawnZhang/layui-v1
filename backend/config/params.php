@@ -1,5 +1,6 @@
 <?php
 return [
     'adminEmail' => 'admin@example.com',
-    'uploadPath' => 'backend/uploads/'
+    'uploadPath' => 'backend/uploads/',
+    'backProcess' => 0,
 ];
