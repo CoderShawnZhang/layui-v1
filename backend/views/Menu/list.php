@@ -28,15 +28,15 @@
             <th lay-data="{field:'ip', width:120}">IP</th>
             <th lay-data="{field:'logins', width:100}">登入次数</th>
             <th lay-data="{field:'joinTime', width:120}">加入时间</th>
-            <th lay-data="{fixed: 'right', toolbar: '#barOption', width:150, align:'center'}">操作</th>
+            <th lay-data="{fixed: 'right', toolbar: '#barOption', width:200, align:'center'}">操作</th>
         </tr>
         </thead>
     </table>
-<div class="layui-hide" id="barOption">
-    <a class="layui-btn layui-btn-mini" data-type="t" lay-event="edit">编辑</a>
-    <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
-    <a class="layui-btn layui-btn-small layui-btn-mini" lay-event="detail">查看</a>
-</div>
+<script type="text/html" id="barOption">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
     <script>
         layui.use(['table'],function(){
             var table = layui.table;

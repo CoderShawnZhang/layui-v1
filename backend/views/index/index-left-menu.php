@@ -135,16 +135,16 @@
         <a href="javascript:;">依赖包管理</a>
         <dl class="layui-nav-child">
             <dd>
-                <a href="javascript:;" data-url="/packagist/index" data-id="39">依赖包列表</a>
+                <a href="javascript:;" data-url="/packagist/index" data-id="40">依赖包列表</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="/packagist/create" data-id="39">开发依赖包</a>
+                <a href="javascript:;" data-url="/packagist/create" data-id="41">开发依赖包</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="/database/include" data-id="40">项目依赖包</a>
+                <a href="javascript:;" data-url="/database/include" data-id="42">项目依赖包</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="/database/math-git-hub" data-id="41">依赖包映射GitHub</a>
+                <a href="javascript:;" data-url="/database/math-git-hub" data-id="43">依赖包映射GitHub</a>
             </dd>
         </dl>
     </li>

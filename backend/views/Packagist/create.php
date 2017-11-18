@@ -23,3 +23,30 @@ echo '开发依赖包';
 */
 
 //如果仅仅增加了一些描述，应该是不打算更新任何库。这种情况下，只需 composer update nothing：
+
+
+
+//开发依赖包的命名规格是根据 composer.json 里 psr-4定义的。
+//例如composer.json 定义如下：
+/*
+    "autoload": {
+        "psr-4": {
+            "LaravelAcademy\\UrlScanner\\": "src/"
+        }
+    }
+*/
+//类的命名空间为：namespace LaravelAcademy\UrlScanner\Url;   Url为src目录下的  注意:命名空间要跳过 src
+
+/*
+ * git 提交
+$ git add .
+$ git commit -m "gogogo"
+$ git push
+
+
+git init
+git add .
+git commit -m "First commit"
+git remote add origin git@github.com:username/hello.git
+git push origin master
+*/
