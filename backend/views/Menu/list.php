@@ -14,7 +14,7 @@
 <!--        <button class="layui-btn layui-btn-disabled">禁用按钮</button>-->
     </div>
 </fieldset>
-    <table class="layui-table" lay-data="{height:'full-160', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/yun/json') ;?>', page:true, id:'test'}" lay-filter="test">
+    <table class="layui-table" lay-data="{height:'full-160', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/packagist/create') ;?>', page:true, id:'test'}" lay-filter="test">
         <thead>
         <tr>
             <th lay-data="{checkbox:true, fixed: true}"></th>

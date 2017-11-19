@@ -5,7 +5,7 @@
         <dl class="layui-nav-child">
             <dd><a href="javascript:;" data-url="/authentication/index" data-id="1"><i class="layui-icon">&#xe651;</i><cite>认证</cite></a></dd>
             <dd><a href="javascript:;" data-url="/authorization/rbac" data-id="2"><i class="layui-icon">&#xe681;</i><cite>授权</cite></a></dd>
-            <dd><a href="javascript:;" data-url="/yun/table" data-id="3"><i class="layui-icon">&#xe658;</i><cite>处理密码</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/workPassword/index" data-id="3"><i class="layui-icon">&#xe658;</i><cite>处理密码</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="4"><i class="layui-icon">&#xe857;</i><cite>加密</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="5"><i class="layui-icon">&#xe6ed;</i><cite>视图安全</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="6"><i class="layui-icon">&#xe6fc;</i><cite>客户端认证</cite></a></dd>

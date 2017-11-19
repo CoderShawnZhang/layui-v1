@@ -1,23 +1,30 @@
-
-<fieldset class="layui-elem-field site-demo-button" style="width: 100%;">
+<?php
+    use yii\widgets\Pjax;
+    use yii\helpers\Html;
+    \yii\widgets\Menu::widget()
+?>
+<?php
+    use backend\YiiFramework2\Widgets\Blockquote\BlockquoteWidget;
+    BlockquoteWidget::begin(['options'=>['id'=>123123]]);
+    echo '控制台,接受用户数据,收集列表输入';
+    BlockquoteWidget::end();
+?>
+<fieldset class="layui-elem-field site-demo-button" style="width: 100%;margin-top:20px;">
     <legend>菜单操作</legend>
-    <div style="margin: 15px;">
+    <div style="margin: 15px;" id="layui-btn-group">
         <div class="layui-input-inline">
             <input type="tel" name="phone" lay-verify="phone" autocomplete="off" class="layui-input" placeholder="查询配置">
         </div>
         <button class="layui-btn layui-btn-warm">查询</button>
         <button class="layui-btn"><a href="/getingdata/add">新增配置</a></button>
         <button class="layui-btn layui-btn-danger">禁用选中</button>
+        <button class="layui-btn layui-btn-danger"><a href="/getingdata/setting">刷新</a></button>
     </div>
 </fieldset>
 
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;width: 100%;">
     <legend>系统设置</legend>
 </fieldset>
-<?php
-use yii\widgets\Pjax;
-use yii\helpers\Html;
-?>
 <? Pjax::begin()?>
 <?=Html::a('time',['/getingdata/time'],['class'=>'btn btn-lg btn-primary'])?>
 <h3>Current Time:<?=$time?></h3>
@@ -62,5 +69,14 @@ use yii\helpers\Html;
             });
             layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
         })
+        var active = {
+            fresh:function(){
+                alert(123);
+            }
+        }
+        $("#layui-btn-group .layui-btn").on('click',function(){
+            var that = $(this),event = that.data('event');
+            active[event] ? active[event].call(this,that) : '';
+        });
     });
 </script>

@@ -19,6 +19,10 @@ use yii\web\UploadedFile;
 class GetingdataController extends BaseController
 {
     public $enableCsrfValidation = false;
+
+    public function actionFresh(){
+        return $this->actionIndex();
+    }
     public function actionIndex(){
         $LoginForm = new LoginForm();
         return $this->render('index',['model'=>$LoginForm]);
@@ -128,15 +132,13 @@ class GetingdataController extends BaseController
      * @return string
      */
     public function actionSettingUpdate(){
-        return true;
         $setting = Setting::find()->indexBy('name')->all();
         if (Model::loadMultiple($setting,Yii::$app->request->post()) && Model::validateMultiple($setting)) {
             foreach($setting as $set){
                 $set->save(false);
             }
-            return 123;
         }
-//        return $this->render('setting', ['model' => $setting]);
+        return $this->render('setting', ['model' => $setting]);
     }
     /**
      * 新增配置
@@ -149,7 +151,8 @@ class GetingdataController extends BaseController
             $set->value = isset($post['value'])?$post['value']:'';
             $set->title = isset($post['title'])?$post['title']:'';
             $set->save();
-            return $this->render('setting');
+            $setting = Setting::find()->indexBy('name')->all();
+            return $this->render('setting',['model' => $setting]);
         }
         return $this->render('add');
     }

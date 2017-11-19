@@ -16,6 +16,13 @@ class CacheController extends BaseController
     public function actionIndex()
     {
 
+        echo phpinfo();die;
+        $cache = Yii::$app->cache;
+        $data = $cache->get('abc');
+        if($data == false){
+            $cache->set('abc','999');
+        }
+        var_dump($cache->get('abc'));
         return $this->render('index');
     }
 

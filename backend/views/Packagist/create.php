@@ -1,52 +1,36 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: anlewo0208
- * Date: 2017/11/16
- * Time: 下午5:27
- */
-
-echo '开发依赖包';
-//开发依赖包是，包的composer.json里面 repositories 使用国内镜像。安装完包的依赖后，要删除掉.安装包的依赖是为测试而用
-//自动加载类  require_once __DIR__ . '/vendor/autoload.php';
-//加载自定义依赖包：
-/*
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
-        },
-        {
-            "packagist": false
-        }
-    ]
-*/
-
-//如果仅仅增加了一些描述，应该是不打算更新任何库。这种情况下，只需 composer update nothing：
-
-
-
-//开发依赖包的命名规格是根据 composer.json 里 psr-4定义的。
-//例如composer.json 定义如下：
-/*
-    "autoload": {
-        "psr-4": {
-            "LaravelAcademy\\UrlScanner\\": "src/"
-        }
-    }
-*/
-//类的命名空间为：namespace LaravelAcademy\UrlScanner\Url;   Url为src目录下的  注意:命名空间要跳过 src
-
-/*
- * git 提交
-$ git add .
-$ git commit -m "gogogo"
-$ git push
-
-
-git init
-git add .
-git commit -m "First commit"
-git remote add origin git@github.com:username/hello.git
-git push origin master
-*/
+<fieldset class="layui-elem-field site-demo-button">
+    <legend>菜单操作</legend>
+    <div style="margin: 15px;">
+        <!--        <button class="layui-btn layui-btn-primary">新增菜单</button>-->
+        <div class="layui-input-inline">
+            <input type="tel" name="phone" lay-verify="phone" autocomplete="off" class="layui-input" placeholder="查询菜单">
+        </div>
+        <button class="layui-btn layui-btn-warm">查询</button>
+        <button class="layui-btn"><a href="/menu/add">新增菜单</a></button>
+        <button class="layui-btn layui-btn-danger">禁用选中</button>
+        <!--        <button class="layui-btn layui-btn-normal">删除选中</button>-->
+        <!--        <button class="layui-btn layui-btn-warm">暖色按钮</button>-->
+        <!--        <button class="layui-btn layui-btn-danger">警告按钮</button>-->
+        <!--        <button class="layui-btn layui-btn-disabled">禁用按钮</button>-->
+    </div>
+</fieldset>
+<table class="layui-table" lay-data="{height:'full-160', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/packagist/pack-list') ;?>', page:true, id:'test'}" lay-filter="test">
+    <thead>
+    <tr>
+        <th lay-data="{checkbox:true, fixed: true}"></th>
+        <th lay-data="{field:'file', width:180, sort: true}">ID</th>
+        <th lay-data="{field:'tt', width:180, sort: true}">用户名</th>
+        <th lay-data="{fixed: 'right', toolbar: '#barOption', width:200, align:'center'}">操作</th>
+    </tr>
+    </thead>
+</table>
+<script type="text/html" id="barOption">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script>
+    layui.use(['table'],function(){
+        var table = layui.table;
+    });
+</script>

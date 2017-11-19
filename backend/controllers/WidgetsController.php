@@ -66,10 +66,28 @@ class WidgetsController extends BaseController
      */
     public function actionWidgetList()
     {
-        if(isset($this->redis)){
+        $ignoe = ['.','..'];
+        $list = scandir("../YiiFramework2/Widgets");
+        $datat = [];
+        foreach($list as $key => $val){
+            $arr = [];
+            if(!in_array($val,$ignoe) && is_dir("../YiiFramework2/Widgets/".$val)){
+                $filename = "../YiiFramework2/Widgets/".$val."/README.lay";
+                if(file_exists($filename)) {
+                    $contents = file_get_contents($filename);
+                    $arr = explode('@',$contents);
+                }
+                $className = isset($arr[0]) ? $arr[0] : '';
+                $params = isset($arr[1]) ? $arr[1] : '';
+                $datat[] = ['className'=>$val,'txtName'=> $className,'params' => $params];
+            }
+        }
+
+        return $this->tableDataHeader($datat);
+        /*
+        if(!isset($this->redis)){
             $widgetRedis = $this->redis->EXISTS('widget');
             if(!$widgetRedis){
-                sleep(6);
                 $widget = Widget::find()->asArray()->all();
                 foreach($widget as $key => $val){
                     $widget[$key]['status'] = $this->WidgetStatus($val['status']);
@@ -81,7 +99,7 @@ class WidgetsController extends BaseController
                 $widget = json_decode($widget, true);
             }
         }else{
-            sleep(6);
+
             $widget = Widget::find()->asArray()->all();
             foreach($widget as $key => $val){
                 $widget[$key]['status'] = $this->WidgetStatus($val['status']);
@@ -89,6 +107,7 @@ class WidgetsController extends BaseController
         }
 
         return $this->tableDataHeader($widget);
+        */
     }
 
     /**
@@ -113,8 +132,12 @@ class WidgetsController extends BaseController
      * @return string 渲染小部件展示页
      */
     public function actionWidgetShow(){
-        $widgetID = \Yii::$app->request->get('widgetID');
-        $widget = Widget::find()->where(['id'=>$widgetID])->asArray()->one();
-        return $this->render('widgetshow',['widgetName'=>$widget['routeName'],'widgetParams'=>$widget['params']]);
+        $params = \Yii::$app->request->get('params');
+        $widgetName = \Yii::$app->request->get('widgetName');
+        return $this->render('widgetshow',['widgetName'=>$widgetName,'widgetParams'=>$params]);
+    }
+
+    public function actionEdit(){
+        return $this->render('edit');
     }
 }

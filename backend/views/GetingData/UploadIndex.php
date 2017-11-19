@@ -5,7 +5,7 @@
         <th lay-data="{checkbox:true, fixed: true}"></th>
         <th lay-data="{field:'id', width:80, fixed: true, sort: true}">ID</th>
         <th lay-data="{field:'src', width:120, sort: true}">图片</th>
-        <th lay-data="{fixed: 'right', toolbar: '#barOption', width:150, align:'center'}">操作</th>
+        <th lay-data="{fixed: 'right', toolbar: '#barOption', width:300, align:'center'}">操作</th>
     </tr>
     </thead>
 </table>
