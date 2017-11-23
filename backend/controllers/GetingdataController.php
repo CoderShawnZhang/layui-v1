@@ -122,8 +122,9 @@ class GetingdataController extends BaseController
      * 收集列表输入（配置）
      */
     public function actionSetting(){
+        $model = new Setting();
         $setting = Setting::find()->asArray()->all();
-        return $this->render('setting',['model'=>$setting]);
+        return $this->render('setting',['setting'=>$setting,'model'=>$model]);
     }
 
     /**
@@ -150,7 +151,10 @@ class GetingdataController extends BaseController
             $set->name = isset($post['name'])?$post['name']:'';
             $set->value = isset($post['value'])?$post['value']:'';
             $set->title = isset($post['title'])?$post['title']:'';
-            $set->save();
+
+            if(!$set->save()){
+
+            }
             $setting = Setting::find()->indexBy('name')->all();
             return $this->render('setting',['model' => $setting]);
         }

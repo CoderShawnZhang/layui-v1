@@ -8,7 +8,7 @@
             <dd><a href="javascript:;" data-url="/workPassword/index" data-id="3"><i class="layui-icon">&#xe658;</i><cite>处理密码</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="4"><i class="layui-icon">&#xe857;</i><cite>加密</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="5"><i class="layui-icon">&#xe6ed;</i><cite>视图安全</cite></a></dd>
-            <dd><a href="javascript:;" data-url="/yun/form" data-id="6"><i class="layui-icon">&#xe6fc;</i><cite>客户端认证</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/authentication/validating" data-id="6"><i class="layui-icon">&#xe6fc;</i><cite>客户端认证</cite></a></dd>
             <dd><a href="javascript:;" data-url="/yun/form" data-id="7"><i class="layui-icon">&#xe611;</i><cite>安全领域的最佳实践</cite></a></dd>
             <dd><a href="javascript:;" data-url="/widgets/list" data-id="7"><i class="layui-icon">&#xe611;</i><cite>小部件</cite></a></dd>
         </dl>

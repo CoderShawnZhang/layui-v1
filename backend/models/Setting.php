@@ -2,6 +2,7 @@
 
 namespace app\models;
 
+use app\YiiFramework2\Validate\SettingValidator;
 use backend\models\BaseModel;
 use Yii;
 
@@ -27,7 +28,8 @@ class Setting extends BaseModel
     public function rules()
     {
         return [
-            [['name'], 'required'],
+            [['name'], SettingValidator::className(),'message'=>1111],
+//            [['name'], 'required'],
             [['name'], 'string', 'max' => 20],
             [['value'], 'string', 'max' => 50],
             [['title'], 'string', 'max' => 20],

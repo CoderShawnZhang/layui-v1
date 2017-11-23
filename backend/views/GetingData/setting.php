@@ -3,12 +3,6 @@
     use yii\helpers\Html;
     \yii\widgets\Menu::widget()
 ?>
-<?php
-    use backend\YiiFramework2\Widgets\Blockquote\BlockquoteWidget;
-    BlockquoteWidget::begin(['options'=>['id'=>123123]]);
-    echo '控制台,接受用户数据,收集列表输入';
-    BlockquoteWidget::end();
-?>
 <fieldset class="layui-elem-field site-demo-button" style="width: 100%;margin-top:20px;">
     <legend>菜单操作</legend>
     <div style="margin: 15px;" id="layui-btn-group">
@@ -30,7 +24,7 @@
 <h3>Current Time:<?=$time?></h3>
 <? Pjax::end()?>
 <form class="layui-form" action="/getingdata/setting-update" method="post" data-pjax="1">
-    <?php foreach($model as $key => $val){ ?>
+    <?php foreach($setting as $key => $val){ ?>
         <?php if($val['name'] == 'CACHE'){?>
             <div class="layui-form-item">
                 <label class="layui-form-label"><?=$val['name'];?></label>

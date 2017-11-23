@@ -8,6 +8,7 @@
 
 namespace backend\controllers;
 
+use app\models\Setting;
 use backend\YiiFramework2\Security\Authentication\Authentication;
 
 
@@ -88,5 +89,13 @@ class AuthenticationController extends BaseController
         }
 
         return ['success' => true,'msg'=>''];
+    }
+
+    /**
+     * 客户端验证
+     */
+    public function actionValidating(){
+        $model = new Setting();
+        return $this->render('validating',['model' => $model]);
     }
 }
