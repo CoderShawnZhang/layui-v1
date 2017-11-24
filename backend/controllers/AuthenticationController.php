@@ -15,6 +15,7 @@ use backend\YiiFramework2\Security\Authentication\Authentication;
 use Yii;
 class AuthenticationController extends BaseController
 {
+    public $enableCsrfValidation = false;
     public function actionIndex(){
         return $this->render('index');
     }

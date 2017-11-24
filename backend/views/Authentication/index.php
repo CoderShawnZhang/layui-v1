@@ -1,8 +1,8 @@
 
 <fieldset class="layui-elem-field site-demo-button" style="margin: 30px;width: 500px;">
     <legend>认证（Authentication）</legend>
-    <form class="layui-form" method="post" action="/authentication/login">
-        {{__csrd}}
+    <form id="login_form" class="layui-form" method="post" action="/authentication/login">
+        <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken() ?>">
         <div class="layui-form-item">
             <div class="layui-inline">
                 <label class="layui-form-label">认证名：</label>
@@ -21,10 +21,11 @@
         </div>
         <div class="layui-form-item">
             <div class="layui-input-block">
-                <button class="layui-btn" lay-submit lay-filter="formDemo">立即认证</button>
+                <button class="layui-btn" lay-submit lay-filter="formDemo" id="Login">立即认证</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>
+        <a id="Logina"></a>
     </form>
 </fieldset>
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="acceptance" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.633082">
+    <testcase name="Signin" file="/Volumes/data/DockerTools/code/layui-v1/backend/tests/acceptance/SigninCept.php" feature="log in as regular user" assertions="2" time="0.633082"/>
+  </testsuite>
+</testsuites>

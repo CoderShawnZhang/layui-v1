@@ -1,0 +1,8 @@
+tests/unit/excample/ExceptionTest.php:testExceptionOK3
+tests/unit/excample/ExceptionTest.php:testExceptionOK4
+tests/unit/excample/ExceptionTest.php:testExceptionFailed1
+tests/unit/excample/ExceptionTest.php:testExceptionOK1
+tests/unit/excample/ExceptionTest.php:testExceptionOK2
+tests/unit/excample/ExceptionTest.php:testExceptionFailed2
+tests/unit/excample/ExceptionTest.php:testExceptionFailed3
+tests/unit/excample/HelloWorldTest.php:testMe
