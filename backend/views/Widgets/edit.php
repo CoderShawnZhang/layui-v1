@@ -12,3 +12,7 @@ Lay.fn.event = function(modName, events, params){
         //layui.code(); 实际使用时，执行该方法即可。而此处注释是因为修饰器在别的js中已经执行过了
     });
 </script>
+
+<?php
+    echo \Layui\Widgets\Progress::widget(['percent'=>80,'options'=>[]]);
+?>

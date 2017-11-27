@@ -1,3 +1,4 @@
+<!--  http://blog.csdn.net/donglynn/article/details/54986433   -->
 <table class="layui-table layuiyii" lay-data="{height:'full-160', url:'<?php echo Yii::$app->urlManager->createAbsoluteUrl('/widgets/widget-list') ;?>', page:true, id:'widgets'}" lay-filter="widgets">
     <thead>
     <tr>
@@ -20,7 +21,13 @@
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">禁用</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="show">演示</a>
 </script>
-
+<?php
+echo \Layui\Widgets\Progress::widget(['percent'=>45,'barOptions'=>['class'=>'layui-bg-green ']]);
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo \yii\bootstrap\Progress::widget([ 'percent' => 70, 'barOptions' => ['class' => 'progress-bar-warning'], 'options' => ['class' => 'progress-striped']]);
+?>
 <script>
     layui.use(['table','layer'],function(){
         var table = layui.table;

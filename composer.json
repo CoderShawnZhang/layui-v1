@@ -20,7 +20,10 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "yiisoft/yii2-redis": "*",
         "laravelurl/urlscannertest": "dev-master",
-        "layui-yii/widgets": "dev-master"
+        "layui-yii/widgets": "dev-master",
+        "samdark/yii2-webshell": "~2.0",
+        "kop/yii2-scroll-pager": "^2.5",
+        "light/yii2-sweet-submit": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

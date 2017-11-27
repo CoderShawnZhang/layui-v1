@@ -11,7 +11,12 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+        'webshell' => [
+            'class' => 'samdark\webshell\Module',
+            // 'yiiScript' => Yii::getAlias('@root'). '/yii', // adjust path to point to your ./yii script
+        ],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',

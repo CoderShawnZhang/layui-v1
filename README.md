@@ -1,5 +1,6 @@
 Layui 加入后台框架 Yii2.0
 ===============================
+composer update symfony/yaml --prefer-source  //强制克隆代码
 
 Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
 developing complex Web applications with multiple tiers.
