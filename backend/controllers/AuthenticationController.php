@@ -25,6 +25,7 @@ class AuthenticationController extends BaseController
      * @return string
      */
     public function actionLogin(){
+//        $hash = Yii::$app->getSecurity()->generatePasswordHash('123456');//生成用户密码验证的HASH值
         $postData = Yii::$app->request->post();
         $validate = $this->validateRequestData($postData);
 

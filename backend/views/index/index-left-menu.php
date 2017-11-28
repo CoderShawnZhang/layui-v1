@@ -73,28 +73,162 @@
 </ul>
 <ul class="layui-nav layui-nav-tree left-menu5" lay-filter="test">
     <li class="layui-nav-item">
-        <a href="javascript:;">5555555</a>
+        <a href="javascript:;">测试前言</a>
         <dl class="layui-nav-child">
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="30">登录日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="30">前提知识准备</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="31">操作日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="31">关于测试这个东西</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">操作日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">创建测试项目</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">操作日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">认识配置文件</a>
+            </dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">单元测试</a>
+        <dl class="layui-nav-child">
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="30">创建测试用例</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="34">操作日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="31">编写测试代码</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="35">操作日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">断言</a>
             </dd>
             <dd>
-                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="36">操作日志</a>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">常用断言大全</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">失败提示</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">调试</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">运行机制</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">项目例子</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">_before和_after</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">依赖声明</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">创建和运行命令</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">Specify特性</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="33">开发建议</a>
+            </dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">初识模块</a>
+        <dl class="layui-nav-child">
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="30">介绍</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="31">测试器</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">扩展单元测试</a>
+            </dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">验收测试</a>
+        <dl class="layui-nav-child">
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="30">入门</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="31">测试报告</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">试着写几个行为</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">元素定位</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">断言大全</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">断言变量</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">不能执行JS</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">测试目标</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">验证码的问题</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">最好别写死URL</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">ajax</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">断言大全-补充</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">Db模块协助</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">自动恢复测试数据</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">扩展</a>
+            </dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">验收测试-WebDriver</a>
+        <dl class="layui-nav-child">
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="30">WebDriver配置</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="31">驱动火狐浏览器</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">与基础验收的共性</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">执行JS</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">模拟击键</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">注意隐藏元素</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">等待与暂停</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">页面与弹框</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">测试iframe</a>
+            </dd>
+            <dd>
+                <a href="javascript:;" data-url="https://www.layui.com/doc/" data-id="32">多会话测试</a>
             </dd>
         </dl>
     </li>

@@ -17,7 +17,7 @@ class Authentication
         if(empty($identity)){
             return false;
         }
-     return true;
+
         if(Yii::$app->getSecurity()->validatePassword($loginData['password'],$identity['auth_key'])){
             Yii::$app->user->login($identity);
             return true;

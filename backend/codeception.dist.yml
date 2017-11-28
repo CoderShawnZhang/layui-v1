@@ -1,0 +1,4 @@
+coverage:
+    enabled: true
+    include:
+        - YiiFramwork2/TestClass/*

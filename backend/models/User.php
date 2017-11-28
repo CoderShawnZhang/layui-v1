@@ -10,7 +10,7 @@ use yii\db\ActiveRecord;
 
 class User extends ActiveRecord implements IdentityInterface
 {
-
+    public $password_hash;
     public static function tableName()
     {
         return '{{%user}}';

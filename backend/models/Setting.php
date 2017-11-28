@@ -49,4 +49,11 @@ class Setting extends BaseModel
             'title' => Yii::t('app', 'Title'),
         ];
     }
+
+    public function createSetting($name,$value,$title=''){
+        $this->setAttributes(['name' => $name,'value'=>$value,'title'=>$title]);
+        $this->save();
+        $this->isNewRecord = true;
+        return $this;
+    }
 }
