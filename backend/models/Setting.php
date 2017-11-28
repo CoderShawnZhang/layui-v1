@@ -7,6 +7,8 @@ use backend\models\BaseModel;
 use Yii;
 
 /**
+ * @test
+ *
  * This is the model class for table "{{%setting}}".
  *
  * @property string $name
@@ -29,8 +31,8 @@ class Setting extends BaseModel
     {
         return [
             [['name'], SettingValidator::className(),'message'=>1111],
-//            [['name'], 'required'],
-            [['name'], 'string', 'max' => 20],
+            [['name'], 'required'],
+            [['name'],'string', 'max' => 20],
             [['value'], 'string', 'max' => 50],
             [['title'], 'string', 'max' => 20],
         ];

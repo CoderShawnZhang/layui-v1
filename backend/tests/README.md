@@ -71,7 +71,7 @@ modules:
 -------------------
 Codeception 通过 'run' 命令执行
 ```
-php codecept run
+codecept run
 ```
 这将使用PhpBrowser执行我们的Welcome 测试，PHP脚本去检查HTML页面的内容，点击链接、填写表单、并且提交POST和GET请求。对于更复杂的测试需要一个浏览器使用Selenium的WebDriver模块。
 
@@ -98,3 +98,8 @@ OK (1 test, 4 assertions)
 ok,就这么轻易滴搞定了，是不是觉得Codeception很简单呢，赶快去试试吧~
 
 此文章是根据官网QuickStart翻译而来，请尊重他人的劳动成果，如转载请说明出处
+
+
+
+运行单元测试：
+codecept run unit ExampleTest.php
