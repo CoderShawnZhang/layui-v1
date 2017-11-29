@@ -27,14 +27,19 @@ class Module extends \yii\base\Module implements BootstrapInterface
      */
     public function bootstrap($app)
     {
+        $R = 'yii\rest\UrlRule';
         $app->getUrlManager()->addRules([
             [
-                'class' => 'yii\rest\UrlRule',
+                'class' => $R,
                 'controller' => ['v1/user'],
                 'extraPatterns' => [
-
+                    'GET,POST users'=>'users'
                 ]
             ],
+            [
+                'class' => $R,
+                'controller' => ['v1/login']
+            ]
         ]);
     }
 }

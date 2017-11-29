@@ -12,18 +12,23 @@
     <li class="layui-nav-item" data-left="left-menu0"><a href="javascript:;">退了</a></li>
     <li class="layui-nav-item"><a href="javascript:;">最新活动</a></li>
     <li class="layui-nav-item layui-this">
-        <a href="javascript:;">产品</a>
+        <a href="javascript:;">安装 Yii</a>
         <dl class="layui-nav-child">
-            <dd><a href="">选项1</a></dd>
-            <dd><a href="">选项2</a></dd>
-            <dd><a href="">选项3</a></dd>
+            <dd><a href="">通过 Composer 安装</a></dd>
+            <dd><a href="">通过归档文件安装</a></dd>
+            <dd><a href="">其他安装方式</a></dd>
         </dl>
     </li>
-    <li class="layui-nav-item"><a href="">大数据</a></li>
     <li class="layui-nav-item">
-        <a href="javascript:;">解决方案</a>
+        <a href="javascript:;">npm&bower</a>
         <dl class="layui-nav-child">
-            <dd><a href="">移动模块</a></dd>
+            <a href="javascript:;" data-url="/asset-plugin/introduce" data-id="100">区别介绍</a>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">Composer</a>
+        <dl class="layui-nav-child">
+            <dd><a href="">安装Composer</a></dd>
             <dd><a href="">后台模版</a></dd>
             <dd class="layui-this"><a href="">选中项</a></dd>
             <dd><a href="">电商平台</a></dd>
