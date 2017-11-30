@@ -15,6 +15,7 @@ return [
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
+            'keyPrefix' => 'layui_'
 //            'class' => 'yii\redis\Cache',
         ],
         'redis' => [

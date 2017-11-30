@@ -149,15 +149,33 @@ class CacheController extends BaseController
      * @return string
      */
     public function actionFileCache(){
-        $level = 4;
-        $this->cache->directoryLevel = $level;
-        $this->cache->keyPrefix = "nai8_";
-        $this->cache->getOrSet(rand(1111,999999),function(){ return 4324234;});
         return $this->render('FileCache');
+    }
+    public function actionCreateFileCache(){
+        //        $this->cache->keyPrefix = 'layui_';
+        //        $this->cache->getOrSet(rand(1,999),function(){ return '缓存热搜排行榜'.rand(1,999);});
+        $this->cache->set(rand(1,999),'缓存热搜排行榜'.rand(1,999),20);
+        return $this->redirect('file-cache');
     }
 
     public function actionEditFileCache(){
-        return $this->render('editfilecache');
+
+        //改变文件的修改时间（获取缓存的时候回对比修改时间，如果缓存过期了，可以通过touch延续缓存生命）
+//
+        $key = Yii::$app->request->get('key');
+        $keystr = $this->file->substrByMark($this->file->substrByMark($key,'_'),'.',-1);
+        return $this->render('editfilecache',['keystr'=>$keystr]);
+    }
+
+    /**
+     * 缓存延续生命
+     */
+    public function actionCacheTouch(){
+        $time = Yii::$app->request->get('time',20);
+        $cacheKey = Yii::$app->request->get('key');
+        $filePath = '../runtime/cache/la/'.$cacheKey;
+        touch($filePath,time()+$time);
+        return true;
     }
     /**
      *
@@ -175,10 +193,18 @@ class CacheController extends BaseController
         $pageCount = $limit * $page;
 
         foreach($arr_file as $key => $val){
-           if($key >= $limit * ($page-1) && $key+1 <= $pageCount){
+            if(!strpos($val,'.bin')){
+                continue;
+            }
+            if($key >= $limit * ($page-1) && $key+1 <= $pageCount){
                $cacheFile = $this->file->substrByMark($val,'/');
-               $data[] = ['filecache'=>$cacheFile];
-           }
+               $fileUpdate = $this->file->updateTime('../runtime/cache/'.$val);
+               $data[] = [
+                   'filecache'=>$cacheFile,
+                   'fileupdate' => $fileUpdate,
+                   'cachetime' => ($fileUpdate - time())<=0 ? '过期':$fileUpdate - time()
+               ];
+            }
         }
         $data = ['code'=>0,'msg'=>'','count'=>count($arr_file),'data'=>$data];
         return json_encode($data);

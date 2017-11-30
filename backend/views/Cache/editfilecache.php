@@ -8,13 +8,13 @@
     <div class="layui-form-item">
         <label class="layui-form-label">缓存key</label>
         <div class="layui-input-block">
-            <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+            <input type="text" name="title" value="<?= $keystr; ?>" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">缓存value</label>
         <div class="layui-input-block">
-            <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+            <textarea name="desc" placeholder="请输入内容" class="layui-textarea"><?= Yii::$app->cache->get($keystr) ?></textarea>
         </div>
     </div>
     <div class="layui-form-item">
