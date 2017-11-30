@@ -8,14 +8,18 @@
 
 namespace backend\controllers;
 
+use backend\YiiFramework2\File\file;
+use phpDocumentor\Reflection\DocBlock\Tags\Var_;
 use Yii;
 class CacheController extends BaseController
 {
     protected $key = 'test';
+    protected $file;
     protected $cache;
     public function init()
     {
         parent::init();
+        $this->file = new file();
         $this->cache = Yii::$app->cache;
         //判断redis是否开启
         $redis = new \Redis();
@@ -111,7 +115,7 @@ class CacheController extends BaseController
 
         $RedisList = Yii::$app->redis->keys('*');
         $list = array_chunk($RedisList,8,$cur_page);
-$i = 0;
+        $i = 0;
         foreach ($list[$cur_page-1] as $key => $val){
 
             try {
@@ -134,6 +138,49 @@ $i = 0;
 
 
         $data = ['code'=>0,'msg'=>'','count'=>count($RedisList),'data'=>$data];
+        return json_encode($data);
+    }
+
+
+    /**
+     *
+     * 文件缓存
+     *
+     * @return string
+     */
+    public function actionFileCache(){
+        $level = 4;
+        $this->cache->directoryLevel = $level;
+        $this->cache->keyPrefix = "nai8_";
+        $this->cache->getOrSet(rand(1111,999999),function(){ return 4324234;});
+        return $this->render('FileCache');
+    }
+
+    public function actionEditFileCache(){
+        return $this->render('editfilecache');
+    }
+    /**
+     *
+     * 获取文件缓存
+     *
+     * @return string
+     */
+    public function actionGetFileCacheFile(){
+        //开始运行
+        $data = [];
+        $arr_file = array();
+        $this->file->tree($arr_file, "../runtime/cache");
+        $page = Yii::$app->request->get('page',1);
+        $limit = Yii::$app->request->get('limit',10);
+        $pageCount = $limit * $page;
+
+        foreach($arr_file as $key => $val){
+           if($key >= $limit * ($page-1) && $key+1 <= $pageCount){
+               $cacheFile = $this->file->substrByMark($val,'/');
+               $data[] = ['filecache'=>$cacheFile];
+           }
+        }
+        $data = ['code'=>0,'msg'=>'','count'=>count($arr_file),'data'=>$data];
         return json_encode($data);
     }
 }

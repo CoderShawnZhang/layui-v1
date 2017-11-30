@@ -1,5 +1,8 @@
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
     <legend>缓存</legend>
+    <?php
+        echo Yii::$app->cache->get('test');
+    ?>
 </fieldset>
 <div class="layui-tab" lay-filter="cache">
     <ul class="layui-tab-title">

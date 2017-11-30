@@ -11,6 +11,8 @@ class BlockquoteWidget extends Widget
 {
     public $content;
 
+    public $separator = '--';
+
     public function init()
     {
         parent::init();
@@ -19,8 +21,6 @@ class BlockquoteWidget extends Widget
 
     public function run()
     {
-//        $content = ob_get_clean();
-        $arr = explode(',',$this->content);
-        return $this->render('blockquote',['content'=>$arr]);
+        return $this->render('blockquote',['content'=>$this->content,'separator'=>$this->separator]);
     }
 }
