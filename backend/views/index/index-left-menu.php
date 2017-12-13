@@ -20,13 +20,14 @@
             <dd><a href="javascript:;" data-id="9"><i class="layui-icon">&#xe615;</i><cite>片段缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="10"><i class="layui-icon">&#xe60f;</i><cite>分页缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="11"><i class="layui-icon">&#xe614;</i><cite>HTTP缓存</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/cache/file-cache" data-id="12"><i class="layui-icon">&#xe614;</i><cite>文件缓存</cite></a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">
         <a href="javascript:;"><i class="layui-icon"></i><cite>应用结构</cite></a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;" data-id="12"><i class="layui-icon">&#x1006;</i><cite>数据缓存</cite></a></dd>
-            <dd><a href="javascript:;" data-id="13"><i class="layui-icon">&#x1007;</i><cite>片段缓存</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/structure/models" data-id="12"><i class="layui-icon">&#x1006;</i><cite>模型</cite></a></dd>
+            <dd><a href="javascript:;" data-url="/structure/controller"data-id="13"><i class="layui-icon">&#x1007;</i><cite>控制器</cite></a></dd>
             <dd><a href="javascript:;" data-id="14"><i class="layui-icon">&#xe629;</i><cite>分页缓存</cite></a></dd>
             <dd><a href="javascript:;" data-id="15"><i class="layui-icon">&#xe600;</i><cite>HTTP缓存</cite></a></dd>
         </dl>

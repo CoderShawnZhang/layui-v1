@@ -27,7 +27,7 @@ class AppAsset extends AssetBundle
     public $depends = [
 //        'yii\web\YiiAsset',
 //        'yii\bootstrap\BootstrapAsset',
-        'light\widgets\SweetSubmitAsset'
+//        'light\widgets\SweetSubmitAsset'
     ];
 
     public $jsOptions = [

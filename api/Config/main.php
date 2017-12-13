@@ -58,8 +58,8 @@ return [
                 // 'GET,HEAD users' => '<controller>/index',
                 // ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/site', 'v1/login']],
                 // ['class' => 'yii\rest\UrlRule', 'controller' => ['v2/site', 'v2/login']],
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/user']],
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v2/orders']],
+//                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/user']],
+//                ['class' => 'yii\rest\UrlRule', 'controller' => ['v2/orders']],
             ],
         ],
         'redis' => [

@@ -8,5 +8,5 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://layuiyii.local.anlewo.com
+            url: http://layuiyii.local.anlewo.com:8080
         - \Helper\Acceptance

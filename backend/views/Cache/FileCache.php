@@ -17,7 +17,7 @@
 </script>
 <script>
     layui.use(['table','layer'],function(){
-        var table = layui.table;
+        var table = layui.table,$ = layui.jquery;
         table.render({
             loading: true
             ,elem: '#filecache'

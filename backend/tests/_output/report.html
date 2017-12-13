@@ -210,24 +210,24 @@
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
      <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 1</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 1</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: green">OK</span> (0.6s)</small></h1>
+ <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (0s)</small></h1>
 
 
 
 	 <table border="0" style="width: 100%;">
 		<tr>
  <td>
-     <h3>Acceptance Tests</h3>
+     <h3>Unit Tests</h3>
  </td>
 </tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('1', this)"><span class="toggle">+</span>
-          <span class="quiet">SigninCept &raquo;</span> Log in as regular user <span style="color: #34495e; font-size: 70%;">0.63s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('1', this)">
+          <span class="quiet">TttTest &raquo;</span> Some feature <span style="color: #34495e; font-size: 70%;">0.02s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -235,32 +235,35 @@
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
 
 
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/authentication/index&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;立即认证&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;mobile&quot;,&quot;admin&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">&quot;password&quot;,&quot;123456&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">&quot;Login&quot;</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;认证成功&quot;</span></td>
-      </tr>
-
 
          
+         
+         
+     </table>
+
+
+    </td>
+   </tr>
+
+
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <p class="scenarioFailed" onclick="showHide('2', this)">
+          <span class="quiet">TttTest &raquo;</span> Demo <span style="color: #34495e; font-size: 70%;">0.01s</span></p>
+    </td>
+   </tr>
+   <tr class="scenarioRow scenarioFailed">
+    <td>
+     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer2">
+
+
+
+         <tr >
+    <td class="error">
+        Call to undefined method tttTest::specify()
+    </td>
+</tr>
+
          
          
      </table>
@@ -282,7 +285,7 @@
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>0</strong></td>
+        <td class="scenarioFailedValue"><strong>1</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>

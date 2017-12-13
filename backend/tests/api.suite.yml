@@ -1,0 +1,11 @@
+
+# 配置文件
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+            url: layuiv1.local.anlewo.com:8080/v1/
+            depends: Yii2
+            part: Json
+    condig:
+         - Yii2

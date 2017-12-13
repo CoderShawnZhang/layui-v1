@@ -22,13 +22,14 @@ class CacheController extends BaseController
         $this->file = new file();
         $this->cache = Yii::$app->cache;
         //判断redis是否开启
-        $redis = new \Redis();
-        $redis->connect('192.168.200.101', 6379);
-        $redis->auth('anlewo2016')  or die("redis 服务器连接失败");;
+//        $redis = new \Redis();
+//        $redis->connect('192.168.200.101', 6379);
+//        $redis->auth('anlewo2016')  or die("redis 服务器连接失败");;
     }
 
     public function actionIndex()
     {
+        echo phpinfo();die;
         return $this->render('index');
     }
     public function actionFiledepend(){
@@ -44,7 +45,6 @@ class CacheController extends BaseController
             $getcache = isset($get['getcache'])?$get['getcache']:0;
 
             if ($change) {
-
                 file_put_contents('../YiiFramework2/Cache/FileDepend/content.txt', time());
             }
             if ($flush) {
