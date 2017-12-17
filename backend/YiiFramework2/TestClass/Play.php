@@ -6,7 +6,7 @@
  * Time: 下午5:39
  */
 
-namespace backend\YiiFramework2\TestClas;
+namespace backend\YiiFramework2\TestClass;
 
 
 use backend\models\User;

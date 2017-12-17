@@ -33,7 +33,8 @@ class Module extends \yii\base\Module implements BootstrapInterface
                 'class' => $R,
                 'controller' => ['v1/user'],
                 'extraPatterns' => [
-                    'GET,POST users'=>'users'
+                    'GET,POST users'=>'users',
+                    'GET index'=>'index',
                 ]
             ],
             [

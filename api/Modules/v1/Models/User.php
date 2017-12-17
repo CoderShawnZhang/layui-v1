@@ -22,6 +22,22 @@ class User extends ActiveRecord implements IdentityInterface,Linkable
         return '{{%user}}';
     }
 
+    /**
+     * 字段
+     * @return array
+     */
+    public function fields()
+    {
+        return array_merge(parent::fields(),[
+            'aaa' =>function(){
+                return 22222;
+            },
+            'name' => function(){
+                return 234234;
+            },
+        ]);
+    }
+
     public function rules()
     {
         return [
